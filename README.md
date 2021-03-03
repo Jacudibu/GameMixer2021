@@ -3,4 +3,5 @@ A game that's supposed to teach players about proper passwords and stuff, create
 For more information, visit https://www.goethe.de/ins/in/en/kultur/fmd/gtm.html
 
 ## Development
-Using Unity 2020.2.6f1
+We are using Unity `2020.2.6f1`
+Once you cloned the repository, don't forget to run `git lfs install` once.
