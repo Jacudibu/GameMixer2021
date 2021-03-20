@@ -19,14 +19,14 @@ namespace UI
         {
             Debug.Log("Logging in with " + nameInput.text + " | " + passwordInput.text);
 
-            if (!nameInput.text.ToLower().Equals(CredentialName.ToLower()))
+            if (!nameInput.text.ToLower().Trim().Equals(CredentialName.ToLower()))
             {
                 // TODO: Display account not found
                 Debug.Log("Account not found!");
                 return;
             }
             
-            if (!passwordInput.text.ToLower().Equals(CredentialPassword.ToLower()))
+            if (!passwordInput.text.ToLower().Trim().Equals(CredentialPassword.ToLower()))
             {
                 // TODO: Display password does not match
                 Debug.Log("Password does not match!");
