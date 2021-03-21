@@ -1,27 +1,28 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace ScriptableObjects
 {
     [CreateAssetMenu(fileName = "NewPost", menuName = "FriendBook/Post", order = 1)]
-    public class Post : ScriptableObject
+    public class PostObject : ScriptableObject
     {
-        [CanBeNull] public Sprite picture;
-        public Character character;
+        [FormerlySerializedAs("picture")] [CanBeNull] public Sprite image;
+        public CharacterObject character;
         public string text;
 
-        public short minutes;
+        [FormerlySerializedAs("minutes")] public short minute;
         public short hour;
         public short day;
         public short month;
-        public short yeah;
+        [FormerlySerializedAs("yeah")] public short year;
         
-        public Comment[] comments;
+        public Comment[] comments; 
         
         [System.Serializable] 
         public class Comment
         {
-            public Character character;
+            public CharacterObject character;
             public string text;
 
             public short minutes;

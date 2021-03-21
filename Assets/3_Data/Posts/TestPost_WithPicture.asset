@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eba7ae4fff0007113a39ae6331424106, type: 3}
-  m_Name: TestPost_NoPicture
+  m_Name: TestPost_WithPicture
   m_EditorClassIdentifier: 
-  picture: {fileID: 0}
+  picture: {fileID: 21300000, guid: 9ce3deff0e200115e819f5013ca2d735, type: 3}
   character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
-  text: This is a post without Picture
-  minutes: 1
+  text: This is a post with a Picture
+  minute: 1
   hour: 2
   day: 3
   month: 2
-  yeah: 2021
+  year: 2021
   comments:
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: This is a test comment 1
@@ -32,6 +32,13 @@ MonoBehaviour:
     text: This is a test comment 2
     minutes: 55
     hour: 1
+    day: 7
+    month: 3
+    yeah: 2021
+  - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
+    text: Yet another test ocmment. Crazy.
+    minutes: 57
+    hour: 2
     day: 7
     month: 3
     yeah: 2021

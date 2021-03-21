@@ -16,7 +16,7 @@ namespace UI
         [SerializeField] private TextMeshProUGUI locationText;
         [SerializeField] private TextMeshProUGUI hobbiesText;
 
-        public void Initialize([NotNull] Character character)
+        public void Initialize([NotNull] CharacterObject character)
         {
             profileImage.sprite = character.profilePicture;
             nameText.text = character.firstName + " " + character.lastName;
