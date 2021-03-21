@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ScriptableObjects
 {
-    [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Character", order = 1)]
+    [CreateAssetMenu(fileName = "NewCharacter", menuName = "FriendBook/Character", order = 1)]
     public class Character : ScriptableObject
     {
         public Sprite profilePicture;
