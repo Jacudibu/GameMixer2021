@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba7ae4fff0007113a39ae6331424106, type: 3}
   m_Name: TestPost_NoPicture
   m_EditorClassIdentifier: 
-  picture: {fileID: 0}
+  image: {fileID: 0}
   character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
   text: This is a post without Picture
-  minutes: 1
+  minute: 0
   hour: 2
   day: 3
   month: 2
-  yeah: 2021
+  year: 2021
   comments:
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: This is a test comment 1

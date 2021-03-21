@@ -2609,11 +2609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
-  posts:
-  - {fileID: 11400000, guid: 110f0899270b30a89ab4cc122772ae27, type: 2}
-  - {fileID: 11400000, guid: 472e4ecf0bc50612da08c9ea075e0037, type: 2}
-  - {fileID: 11400000, guid: 472e4ecf0bc50612da08c9ea075e0037, type: 2}
-  - {fileID: 11400000, guid: 110f0899270b30a89ab4cc122772ae27, type: 2}
+  resourceFolder: Chapter1
 --- !u!1 &1124746709
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,7 +6058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765084605801334878, guid: 2da4ede7617f1948f86c563a68261e63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 947
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4765084605801334878, guid: 2da4ede7617f1948f86c563a68261e63, type: 3}
       propertyPath: m_AnchoredPosition.y
