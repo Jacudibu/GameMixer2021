@@ -13,13 +13,13 @@ namespace UI
         
         public void Initialize([NotNull] PostObject post)
         {
-            if (image != null)
+            if (post.image != null)
             {
                 image.sprite = post.image;
             }
             else
             {
-                Destroy(image);
+                Destroy(image.gameObject);
             }
             
             text.text = post.text;
