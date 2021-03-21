@@ -7,20 +7,20 @@ namespace ScriptableObjects
     [CreateAssetMenu(fileName = "NewPost", menuName = "FriendBook/Post", order = 1)]
     public class PostObject : ScriptableObject
     {
-        [FormerlySerializedAs("picture")] [CanBeNull] public Sprite image;
+        [CanBeNull] public Sprite image;
         public CharacterObject character;
         public string text;
 
-        [FormerlySerializedAs("minutes")] public short minute;
+        public short minute;
         public short hour;
         public short day;
         public short month;
-        [FormerlySerializedAs("yeah")] public short year;
+        public short year;
         
-        public Comment[] comments; 
+        public CommentObject[] comments; 
         
         [System.Serializable] 
-        public class Comment
+        public class CommentObject
         {
             public CharacterObject character;
             public string text;

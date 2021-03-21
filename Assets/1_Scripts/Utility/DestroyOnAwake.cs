@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class DestroyOnAwake : MonoBehaviour
+namespace Utility
 {
-    private void Awake()
+    public class DestroyOnAwake : MonoBehaviour
     {
-        Destroy(gameObject);
+        private void Awake()
+        {
+            Destroy(gameObject);
+        }
     }
 }
