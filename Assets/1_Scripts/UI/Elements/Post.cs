@@ -1,15 +1,17 @@
 using JetBrains.Annotations;
 using ScriptableObjects;
 using TMPro;
+using UI.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace UI.Elements
 {
     public class Post : MonoBehaviour
     {
         [SerializeField] private Image image;
         [SerializeField] private TextMeshProUGUI text;
+        private CommentCollection _commentCollection;
         
         public void Initialize([NotNull] PostObject post)
         {
@@ -23,8 +25,16 @@ namespace UI
             }
             
             text.text = post.text;
-            
-            // TODO: Comments and stuff
+
+            _commentCollection = GetComponentInChildren<CommentCollection>();
+            if (post.comments.Length == 0)
+            {
+                Destroy(_commentCollection.gameObject);
+            }
+            else
+            {
+                _commentCollection.Initialize(post.comments);
+            }
         }
     }
 }

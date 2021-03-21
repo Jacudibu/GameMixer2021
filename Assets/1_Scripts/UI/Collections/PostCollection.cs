@@ -5,12 +5,13 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using JetBrains.Annotations;
 using ScriptableObjects;
+using UI.Elements;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utility;
 
-namespace UI
+namespace UI.Collections
 {
     public class PostCollection : SingletonBehaviour<PostCollection>
     {
@@ -18,35 +19,32 @@ namespace UI
 
         public void Initialize([NotNull] IEnumerable<PostObject> posts)
         {
-            DeleteAllChildren();
+            transform.DeleteAllChildren();
             
             var sortedPosts = posts.OrderBy(x => new DateTime(x.year, x.month, x.day, x.hour, x.minute, 0));
             foreach (var post in sortedPosts)
             {
                 InstantiatePost(post);
             }
-
+            
             StartCoroutine(FitContent());
         }
-
+        
         [SuppressMessage("ReSharper", "Unity.InefficientPropertyAccess")]
         private IEnumerator FitContent() // Dirty hack because ContentSizeFitter needs a frame to adjust...
         {
-            yield return null;
-            var fitter = GetComponent<ContentSizeFitter>();
-            fitter.enabled = false;
-            fitter.enabled = true;
-        }
-
-        private void DeleteAllChildren()
-        {
-            for (var i = transform.childCount - 1; i >= 0; i--)
+            var fitter = GetComponentsInChildren<ContentSizeFitter>();
+            foreach (var contentSizeFitter in fitter)
             {
-                var child = transform.GetChild(i);
-                Destroy(child.gameObject);
+                if (contentSizeFitter != null)
+                {
+                    yield return null;
+                    contentSizeFitter.enabled = false;
+                    contentSizeFitter.enabled = true;
+                }
             }
         }
-
+        
         private void InstantiatePost([NotNull] PostObject post)
         {
             var instance = Instantiate(postPrefab, transform);

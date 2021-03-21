@@ -1,4 +1,5 @@
 using ScriptableObjects;
+using UI.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +22,6 @@ public class ChapterData : MonoBehaviour
         }
         
         UI.MainUI.Instance.Initialize(character);
-        UI.PostCollection.Instance.Initialize(posts);
+        PostCollection.Instance.Initialize(posts);
     }
 }
