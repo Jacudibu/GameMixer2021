@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace ScriptableObjects
@@ -16,5 +17,10 @@ namespace ScriptableObjects
         public short yearOfBirth;
 
         public string[] hobbies;
+
+        [NotNull] public string GetNameString()
+        {
+            return firstName + " " + lastName;
+        }
     }
 }

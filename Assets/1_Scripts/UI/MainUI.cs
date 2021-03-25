@@ -19,7 +19,7 @@ namespace UI
         public void Initialize([NotNull] CharacterObject character)
         {
             profileImage.sprite = character.profilePicture;
-            nameText.text = character.firstName + " " + character.lastName;
+            nameText.text = character.GetNameString();
             dateOfBirthText.text = character.dayOfBirth + " / " + character.monthOfBirth + " / " + character.yearOfBirth;
             locationText.text = character.location;
             hobbiesText.text = string.Join("\n", character.hobbies);

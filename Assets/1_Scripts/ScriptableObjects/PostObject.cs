@@ -1,6 +1,5 @@
 using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace ScriptableObjects
 {
@@ -18,5 +17,10 @@ namespace ScriptableObjects
         public short year;
         
         public CommentObject[] comments;
+
+        [NotNull] public string GetTimestampString()
+        {
+            return DateHelper.GetTimestampString(year, month, day, hour, minute);
+        }
     }
 }
