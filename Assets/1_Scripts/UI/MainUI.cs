@@ -1,3 +1,4 @@
+using System.Linq;
 using JetBrains.Annotations;
 using ScriptableObjects;
 using TMPro;
@@ -22,7 +23,7 @@ namespace UI
             nameText.text = character.GetNameString();
             dateOfBirthText.text = character.dayOfBirth + " / " + character.monthOfBirth + " / " + character.yearOfBirth;
             locationText.text = character.location;
-            hobbiesText.text = string.Join("\n", character.hobbies);
+            hobbiesText.text = string.Join("\n", character.hobbies.Select(LocalizationHelper.Get));
         }
     }
 }
