@@ -21,7 +21,7 @@ namespace UI.Collections
         {
             transform.DeleteAllChildren();
             
-            var sortedPosts = posts.OrderBy(x => new DateTime(x.year, x.month, x.day, x.hour, x.minute, 0));
+            var sortedPosts = posts.OrderByDescending(x => new DateTime(x.year, x.month, x.day, x.hour, x.minute, 0));
             foreach (var post in sortedPosts)
             {
                 InstantiatePost(post);
