@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: helloWorld
     m_Metadata:
       m_Items: []
+  - m_Id: 8017776923987968
+    m_Key: startUI.B1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

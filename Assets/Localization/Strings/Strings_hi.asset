@@ -22,5 +22,9 @@ MonoBehaviour:
     m_Localized: "\u0939\u0948\u0932\u094B \u0935\u0930\u094D\u0932\u094D\u0921!"
     m_Metadata:
       m_Items: []
+  - m_Id: 8017776923987968
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
