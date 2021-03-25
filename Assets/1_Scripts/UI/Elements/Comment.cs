@@ -18,7 +18,7 @@ namespace UI.Elements
             characterPicture.sprite = comment.character.profilePicture;
             characterName.text = comment.character.GetNameString();
             timeStamp.text = comment.GetTimestampString();
-            text.text = comment.text;
+            text.text = LocalizationHelper.Get(comment.text);
         }
     }
 }

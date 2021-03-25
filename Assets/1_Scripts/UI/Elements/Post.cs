@@ -1,5 +1,3 @@
-using System;
-using System.Globalization;
 using JetBrains.Annotations;
 using ScriptableObjects;
 using TMPro;
@@ -35,7 +33,7 @@ namespace UI.Elements
                 Destroy(image.gameObject);
             }
             
-            text.text = post.text;
+            text.text = LocalizationHelper.Get(post.text);
 
             _commentCollection = GetComponentInChildren<CommentCollection>();
             if (post.comments.Length == 0)
