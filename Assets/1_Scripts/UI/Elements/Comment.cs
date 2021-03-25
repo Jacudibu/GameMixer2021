@@ -16,8 +16,8 @@ namespace UI.Elements
         public void Initialize([NotNull] CommentObject comment)
         {
             characterPicture.sprite = comment.character.profilePicture;
-            characterName.text = comment.character.firstName + " " + comment.character.lastName;
-            timeStamp.text = comment.day + "/" + comment.month + "/" + comment.year.ToString("0000") + " – " + comment.hour.ToString("00") + ":" + comment.minutes.ToString("00");
+            characterName.text = comment.character.GetNameString();
+            timeStamp.text = comment.GetTimestampString();
             text.text = comment.text;
         }
     }

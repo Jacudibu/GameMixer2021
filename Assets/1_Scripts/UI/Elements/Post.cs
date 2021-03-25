@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 using JetBrains.Annotations;
 using ScriptableObjects;
 using TMPro;
@@ -11,10 +13,19 @@ namespace UI.Elements
     {
         [SerializeField] private Image image;
         [SerializeField] private TextMeshProUGUI text;
+
+        [SerializeField] private Image headerImage;
+        [SerializeField] private TextMeshProUGUI headerName;
+        [SerializeField] private TextMeshProUGUI headerTimestamp;
+        
         private CommentCollection _commentCollection;
         
         public void Initialize([NotNull] PostObject post)
         {
+            headerImage.sprite = post.character.profilePicture;
+            headerName.text = post.character.GetNameString();
+            headerTimestamp.text = post.GetTimestampString();
+            
             if (post.image != null)
             {
                 image.sprite = post.image;
