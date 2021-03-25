@@ -27,7 +27,7 @@ public static class LocalizationHelper
         var entry = _localizationTable.GetEntry(key);
         if (entry == null)
         {
-            Debug.LogWarning("Localization: Unable to find key " + key + " in localization table.");
+            Debug.LogWarning("Localization: Unable to find key " + key + " in " + _localizationTable.name + ".");
             return key;
         }
 
