@@ -1,5 +1,8 @@
 using System.Collections;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using ScriptableObjects;
+using UI;
 using UI.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -8,7 +11,13 @@ using UnityEngine.SceneManagement;
 public class ChapterData : MonoBehaviour
 {
     [SerializeField] private CharacterObject character;
-    
+    [SerializeField] private DialogueObject initialDialogue;
+
+    private void Awake()
+    {
+        MainUI.Instance.gameObject.SetActive(false);
+    }
+
     public void Start()
     {
         Initialize();
@@ -44,7 +53,19 @@ public class ChapterData : MonoBehaviour
 
         LocalizationHelper.Initialize(tableOperation.Result);
         
-        UI.MainUI.Instance.Initialize(character);
+        foreach (var element in initialDialogue.elements)
+        {
+            PhoneUI.Instance.PostMessage(element);
+            yield return new WaitForSeconds(1);
+        }
+        
+        LoadWebsite(posts);
+    }
+
+    private void LoadWebsite([NotNull] IEnumerable<PostObject> posts)
+    {
+        MainUI.Instance.gameObject.SetActive(true);
+        MainUI.Instance.Initialize(character);
         PostCollection.Instance.Initialize(posts);
     }
 }
