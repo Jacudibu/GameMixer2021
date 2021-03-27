@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -12,6 +11,8 @@ namespace UI
         [SerializeField] private GameObject inputParent;
         [SerializeField] private GameObject successParent;
 
+        [SerializeField] private TextMeshProUGUI errorMessage;
+        
         private const string CredentialName = "bla";
         private const string CredentialPassword = "blub";
         
@@ -21,15 +22,13 @@ namespace UI
 
             if (!nameInput.text.ToLower().Trim().Equals(CredentialName.ToLower()))
             {
-                // TODO: Display account not found
-                Debug.Log("Account not found!");
+                errorMessage.text = "Account not found!";
                 return;
             }
             
             if (!passwordInput.text.ToLower().Trim().Equals(CredentialPassword.ToLower()))
             {
-                // TODO: Display password does not match
-                Debug.Log("Password does not match!");
+                errorMessage.text = "Password does not match!";
                 return;
             }
 
@@ -39,6 +38,7 @@ namespace UI
 
         private void OnEnable()
         {
+            errorMessage.text = "";
             nameInput.text = "";
             passwordInput.text = "";
             
