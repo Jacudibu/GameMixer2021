@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -12,7 +13,8 @@ public class ChapterData : MonoBehaviour
 {
     [SerializeField] private CharacterObject character;
     [SerializeField] private DialogueObject initialDialogue;
-
+    private bool _showNextDialogueElement;
+    
     private void Awake()
     {
         MainUI.Instance.gameObject.SetActive(false);
@@ -27,6 +29,11 @@ public class ChapterData : MonoBehaviour
     {
         StartCoroutine(InitializeCoroutine());
     }
+
+    private void ShowNextDialogue()
+    {
+        _showNextDialogueElement = true;
+    }
     
     private IEnumerator InitializeCoroutine()
     {
@@ -37,6 +44,36 @@ public class ChapterData : MonoBehaviour
                            "If you want to load posts, make sure they are in a Resource folder with the same name as the scene.");
         }
 
+        yield return InitializeLocalization();
+
+        // TODO: This is only here for testing, will be moved somewhere else later on to allow multiple dialogues per chapter
+        foreach (var element in initialDialogue.elements)
+        {
+            if (element.sentManually)
+            {
+                PhoneUI.Instance.SetResponseButton(element.text, ShowNextDialogue);
+                while (!_showNextDialogueElement)
+                {
+                    yield return null;
+                }
+                _showNextDialogueElement = false;
+            }
+            else
+            {
+                var waitTime = Math.Max(0.5f, element.text.Length / 75f);
+                waitTime = Math.Min(waitTime, 2.5f); // qq Math.Clamp wasn't there before .Net Standard 2.1
+                
+                yield return new WaitForSeconds(waitTime);
+            }
+            
+            PhoneUI.Instance.PostMessage(element);
+        }
+        
+        LoadWebsite(posts);
+    }
+
+    private static IEnumerator InitializeLocalization()
+    {
         // TODO: Move this somewhere else and listen to some LocalizationSettings.OnLocalizationChanged event, otherwise we do this on every scene load
         // (which in itself isn't too bad, just takes a couple frames)
         var localeOperation = LocalizationSettings.SelectedLocaleAsync;
@@ -44,7 +81,7 @@ public class ChapterData : MonoBehaviour
         {
             yield return null;
         }
-        
+
         var tableOperation = LocalizationSettings.StringDatabase.GetTableAsync("Strings", localeOperation.Result);
         while (!tableOperation.IsDone)
         {
@@ -52,14 +89,6 @@ public class ChapterData : MonoBehaviour
         }
 
         LocalizationHelper.Initialize(tableOperation.Result);
-        
-        foreach (var element in initialDialogue.elements)
-        {
-            PhoneUI.Instance.PostMessage(element);
-            yield return new WaitForSeconds(1);
-        }
-        
-        LoadWebsite(posts);
     }
 
     private void LoadWebsite([NotNull] IEnumerable<PostObject> posts)
