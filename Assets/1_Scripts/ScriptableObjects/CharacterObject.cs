@@ -16,6 +16,13 @@ namespace ScriptableObjects
         public short monthOfBirth;
         public short yearOfBirth;
 
+        public string job;
+        public string education;
+        
+        public string address;
+        public string phone;
+        public string email;
+        
         public string[] hobbies;
 
         [NotNull] public string GetNameString()
