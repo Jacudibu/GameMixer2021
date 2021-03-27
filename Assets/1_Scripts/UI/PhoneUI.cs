@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Enums;
 using JetBrains.Annotations;
@@ -15,16 +16,38 @@ namespace UI
         [SerializeField] private GameObject rightAlignedPrefab;
 
         [SerializeField] private Transform contentParent;
+        [SerializeField] private Button responseButton;
+        private TextMeshProUGUI _responseButtonText;
+        
         private ScrollRect _scrollRect;
 
         private Coroutine _scrollRoutine;
         private float autoScrollSpeed = 5;
+
+        private Action _onResponseButtonClicked;
         
         private void Awake()
         {
             _scrollRect = GetComponentInChildren<ScrollRect>();
+            _responseButtonText = responseButton.GetComponentInChildren<TextMeshProUGUI>();
+            responseButton.gameObject.SetActive(false);
+        }
+        
+        public void SetResponseButton(string text, [NotNull] Action onResponseButtonClick) // TODO: Add on click here
+        {
+            _onResponseButtonClicked = onResponseButtonClick;
+            _responseButtonText.text = text;
+            responseButton.gameObject.SetActive(true);
         }
 
+        public void OnResponseButtonClick()
+        {
+            responseButton.gameObject.SetActive(false);
+            var lastAction = _onResponseButtonClicked;
+            _onResponseButtonClicked = null;
+            lastAction.Invoke();
+        }
+        
         public void PostMessage([NotNull] DialogueElement message)
         {
             var prefab = message.alignment == HorizontalPosition.Left
