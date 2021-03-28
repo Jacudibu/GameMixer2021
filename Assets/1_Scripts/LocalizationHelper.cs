@@ -28,7 +28,7 @@ public static class LocalizationHelper
         if (entry == null)
         {
             Debug.LogWarning("Localization: Unable to find key " + key + " in " + _localizationTable.name + ".");
-            return key;
+            return "{?" + key + "}";
         }
 
         return entry.GetLocalizedString(args);
