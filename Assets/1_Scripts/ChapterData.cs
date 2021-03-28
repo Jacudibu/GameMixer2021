@@ -41,7 +41,7 @@ public class ChapterData : MonoBehaviour
 
         PhoneUI.Instance.Initialize(character);
         
-        DialogueManager.Instance.StartDialogue(initialDialogue);
+        yield return DialogueManager.Instance.StartDialogueCoroutine(initialDialogue);
         
         LoadWebsite(posts);
     }

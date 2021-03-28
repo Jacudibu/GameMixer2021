@@ -1,10 +1,13 @@
+using ScriptableObjects;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI
 {
     public class LoginUI : MonoBehaviour
     {
+        [SerializeField] private Button closeButton;
         [SerializeField] private TMP_InputField nameInput;
         [SerializeField] private TMP_InputField passwordInput;
 
@@ -12,6 +15,8 @@ namespace UI
         [SerializeField] private GameObject successParent;
 
         [SerializeField] private TextMeshProUGUI errorMessage;
+        [SerializeField] private DialogueObject successDialogue;
+
         
         private const string CredentialName = "bla";
         private const string CredentialPassword = "blub";
@@ -34,6 +39,12 @@ namespace UI
 
             inputParent.SetActive(false);
             successParent.SetActive(true);
+
+            if (successDialogue != null)
+            {
+                DialogueManager.Instance.StartDialogue(successDialogue);
+                closeButton.gameObject.SetActive(false);
+            }
         }
 
         private void OnEnable()

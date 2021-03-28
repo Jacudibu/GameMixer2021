@@ -25,5 +25,10 @@ namespace UI
             locationText.text = character.location;
             hobbiesText.text = string.Join("\n", character.hobbies.Select(LocalizationHelper.Get));
         }
+
+        public void Hide()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

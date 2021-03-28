@@ -17,7 +17,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
         _advanceDialogue = true;
     }
     
-    public void StartDialogue([NotNull] DialogueObject dialogue, bool clearPreExistingDialogue = false)
+    public void StartDialogue([NotNull] DialogueObject dialogue, float initialDelay = 0, bool clearPreExistingDialogue = false)
     {
         if (_currentDialogueCoroutine != null)
         {
@@ -29,11 +29,26 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
             PhoneUI.Instance.Clear();
         }
 
-        _currentDialogueCoroutine = StartCoroutine(PrintDialogueCoroutine(dialogue));
+        _currentDialogueCoroutine = StartCoroutine(PrintDialogueCoroutine(dialogue, initialDelay));
     }
 
-    private IEnumerator PrintDialogueCoroutine([NotNull] DialogueObject dialogue)
+    public IEnumerator StartDialogueCoroutine([NotNull] DialogueObject dialogue, float initialDelay = 0, bool clearPreExistingDialogue = false)
     {
+        StartDialogue(dialogue, initialDelay, clearPreExistingDialogue);
+
+        while (_currentDialogueCoroutine != null)
+        {
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    private IEnumerator PrintDialogueCoroutine([NotNull] DialogueObject dialogue, float initialDelay)
+    {
+        if (initialDelay > 0)
+        {
+            yield return new WaitForSeconds(initialDelay);
+        }
+        
         foreach (var element in dialogue.elements)
         {
             if (element.sentManually)
