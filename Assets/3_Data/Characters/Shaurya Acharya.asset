@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7f02530d2d4b22ab866802338524c9, type: 3}
+  m_Name: Shaurya Acharya
+  m_EditorClassIdentifier: 
+  profilePicture: {fileID: -2413806693520163455, guid: 2108068bfd30af1908d60a82ccebf689, type: 3}
+  firstName: Shaurya
+  lastName: Acharya
+  location: Falkensee
+  dayOfBirth: 21
+  monthOfBirth: 8
+  yearOfBirth: 2001
+  hobbies:
+  - Playing with my dog, Lucie!
+  - Playing soccer #ClassOf'02
+  - Eating ice cream
