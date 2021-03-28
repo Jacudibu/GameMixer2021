@@ -15,13 +15,16 @@ namespace UI
     {
         [SerializeField] private GameObject leftAlignedPrefab;
         [SerializeField] private GameObject rightAlignedPrefab;
-
+        [Space(10)]
         [SerializeField] private Transform contentParent;
         [SerializeField] private Button responseButton;
         [SerializeField] private TextMeshProUGUI friendIsTyping;
-        
+        [Space(10)]
         [SerializeField] private Image friendProfileImage;
         [SerializeField] private TextMeshProUGUI friendName;
+        [Space(10)]
+        [SerializeField] private GameObject openUI;
+        [SerializeField] private GameObject closedUI;
         
         private TextMeshProUGUI _responseButtonText;
 
@@ -31,12 +34,34 @@ namespace UI
         private float autoScrollSpeed = 5;
 
         private Action _onResponseButtonClicked;
+
+        private bool _isOpen;
+
+        public void Open()
+        {
+            _isOpen = true;
+            RefreshUI();
+            ScrollDown();
+        }
+
+        public void Close()
+        {
+            _isOpen = false;
+            RefreshUI();
+        }
+
+        private void RefreshUI()
+        {
+            openUI.SetActive(_isOpen);
+            closedUI.SetActive(!_isOpen);
+        }
         
         private void Awake()
         {
             _scrollRect = GetComponentInChildren<ScrollRect>();
             _responseButtonText = responseButton.GetComponentInChildren<TextMeshProUGUI>();
             responseButton.gameObject.SetActive(false);
+            Close();
         }
 
         public void Initialize([NotNull] CharacterObject character)
@@ -76,15 +101,20 @@ namespace UI
             
             var instance = Instantiate(prefab, contentParent);
             instance.GetComponentInChildren<TextMeshProUGUI>().text = LocalizationHelper.Get(message.text);
+            
+            ScrollDown();
+        }
 
+        private void ScrollDown()
+        {
             if (_scrollRoutine != null)
             {
                 StopCoroutine(_scrollRoutine);
             }
-            _scrollRoutine = StartCoroutine(ScrollDown());
+            _scrollRoutine = StartCoroutine(ScrollDownCoroutine());
         }
-
-        private IEnumerator ScrollDown()
+        
+        private IEnumerator ScrollDownCoroutine()
         {
             yield return new WaitForEndOfFrame();
             var origin = _scrollRect.verticalNormalizedPosition;
