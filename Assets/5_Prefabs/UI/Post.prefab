@@ -582,13 +582,6 @@ MonoBehaviour:
   headerImage: {fileID: 3208344203090175250}
   headerName: {fileID: 8319488340466895515}
   headerTimestamp: {fileID: 7373313307922793609}
-  stringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:6cdce6bab9271581fadfdae0f5fcbe5c
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
 --- !u!114 &9055176927259214355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +600,7 @@ MonoBehaviour:
     m_Top: 50
     m_Bottom: 50
   m_ChildAlignment: 1
-  m_Spacing: 0
+  m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
