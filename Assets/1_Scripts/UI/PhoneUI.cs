@@ -24,10 +24,9 @@ namespace UI
         [SerializeField] private TextMeshProUGUI friendName;
         [Space(10)]
         [SerializeField] private GameObject openUI;
-        [SerializeField] private GameObject closedUI;
+        [SerializeField] private PhoneClosedUI closedUI;        
         
         private TextMeshProUGUI _responseButtonText;
-
         private ScrollRect _scrollRect;
 
         private Coroutine _scrollRoutine;
@@ -42,6 +41,7 @@ namespace UI
             _isOpen = true;
             RefreshUI();
             ScrollDown();
+            closedUI.ResetNotificationCount();
         }
 
         public void Close()
@@ -52,8 +52,8 @@ namespace UI
 
         private void RefreshUI()
         {
-            openUI.SetActive(_isOpen);
-            closedUI.SetActive(!_isOpen);
+            openUI.gameObject.SetActive(_isOpen);
+            closedUI.gameObject.SetActive(!_isOpen);
         }
         
         private void Awake()
@@ -101,8 +101,15 @@ namespace UI
             
             var instance = Instantiate(prefab, contentParent);
             instance.GetComponentInChildren<TextMeshProUGUI>().text = LocalizationHelper.Get(message.text);
-            
-            ScrollDown();
+
+            if (_isOpen)
+            {
+                ScrollDown();
+            }
+            else
+            {
+                closedUI.IncreaseNotificationCount();
+            }
         }
 
         private void ScrollDown()
