@@ -41,6 +41,7 @@ namespace UI
         private void OnEnable()
         {
             ScrollDown();
+            responseButton.gameObject.SetActive(_onResponseButtonClicked != null);
         }
 
         public void Initialize([NotNull] CharacterObject character)
