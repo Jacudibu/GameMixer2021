@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Enums;
 using JetBrains.Annotations;
+using ScriptableObjects;
 using TMPro;
 using UI.Elements;
 using UnityEngine;
@@ -17,8 +18,13 @@ namespace UI
 
         [SerializeField] private Transform contentParent;
         [SerializeField] private Button responseButton;
-        private TextMeshProUGUI _responseButtonText;
+        [SerializeField] private TextMeshProUGUI friendIsTyping;
         
+        [SerializeField] private Image friendProfileImage;
+        [SerializeField] private TextMeshProUGUI friendName;
+        
+        private TextMeshProUGUI _responseButtonText;
+
         private ScrollRect _scrollRect;
 
         private Coroutine _scrollRoutine;
@@ -32,7 +38,14 @@ namespace UI
             _responseButtonText = responseButton.GetComponentInChildren<TextMeshProUGUI>();
             responseButton.gameObject.SetActive(false);
         }
-        
+
+        public void Initialize([NotNull] CharacterObject character)
+        {
+            friendProfileImage.sprite = character.profilePicture;
+            friendName.text = character.GetNameString();
+            friendIsTyping.text = LocalizationHelper.Get("phoneUI.IsTyping");
+        }
+
         public void SetResponseButton(string text, [NotNull] Action onResponseButtonClick) // TODO: Add on click here
         {
             _onResponseButtonClicked = onResponseButtonClick;
@@ -47,9 +60,16 @@ namespace UI
             _onResponseButtonClicked = null;
             lastAction.Invoke();
         }
-        
+
+        public void ShowFriendIsTyping(bool value)
+        {
+            friendIsTyping.gameObject.SetActive(value);
+        }
+
         public void PostMessage([NotNull] DialogueElement message)
         {
+            ShowFriendIsTyping(false);
+            
             var prefab = message.alignment == HorizontalPosition.Left
                 ? leftAlignedPrefab
                 : rightAlignedPrefab;
@@ -80,6 +100,5 @@ namespace UI
         {
             contentParent.DeleteAllChildren();
         }
-        
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Enums;
 using JetBrains.Annotations;
 using ScriptableObjects;
 using UI;
@@ -46,6 +47,8 @@ public class ChapterData : MonoBehaviour
 
         yield return InitializeLocalization();
 
+        PhoneUI.Instance.Initialize(character);
+        
         // TODO: This is only here for testing, will be moved somewhere else later on to allow multiple dialogues per chapter
         foreach (var element in initialDialogue.elements)
         {
@@ -62,11 +65,17 @@ public class ChapterData : MonoBehaviour
             {
                 var waitTime = Math.Max(0.5f, element.text.Length / 75f);
                 waitTime = Math.Min(waitTime, 2.5f); // qq Math.Clamp wasn't there before .Net Standard 2.1
+
+                if (element.alignment == HorizontalPosition.Left)
+                {
+                    PhoneUI.Instance.ShowFriendIsTyping(true);
+                }
                 
                 yield return new WaitForSeconds(waitTime);
             }
             
             PhoneUI.Instance.PostMessage(element);
+            yield return null;
         }
         
         LoadWebsite(posts);
