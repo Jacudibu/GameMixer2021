@@ -67,7 +67,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
 
                 if (element.alignment == HorizontalPosition.Left)
                 {
-                    PhoneUI.Instance.ShowFriendIsTyping(true);
+                    PhoneUI.Instance.ShowFriendIsTyping();
                 }
                 
                 yield return new WaitForSeconds(waitTime);
