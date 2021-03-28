@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7f02530d2d4b22ab866802338524c9, type: 3}
   m_Name: Aynur Akman
   m_EditorClassIdentifier: 
-  profilePicture: {fileID: -2413806693520163455, guid: 2108068bfd30af1908d60a82ccebf689, type: 3}
+  profilePicture: {fileID: 21300000, guid: e4afa280b0594d557acc1b9a9eb8bf09, type: 3}
   firstName: Aynur
   lastName: Akman
   location: Falkensee
   dayOfBirth: 21
   monthOfBirth: 8
   yearOfBirth: 2001
+  job: 
+  education: 
+  address: 
+  phone: 
+  email: 
   hobbies:
   - Playing with my dog, Lucie!
   - Playing soccer #ClassOf'02
