@@ -23,22 +23,31 @@ MonoBehaviour:
   comments:
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: This is a test comment 1
-    minutes: 50
+    minute: 50
     hour: 1
     day: 7
     month: 3
     year: 2021
+    subComments: []
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: This is a test comment 2
-    minutes: 55
+    minute: 55
     hour: 1
     day: 7
     month: 3
     year: 2021
+    subComments:
+    - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+      text: Look at this beautiful response!
+    - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+      text: OH MY! SUCH A BEAUTIFUL RESPOSNSE INDEED! SQUEAAAK! Bla bla bla
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: Yet another test ocmment. Crazy.
-    minutes: 57
+    minute: 57
     hour: 2
     day: 7
     month: 3
     year: 2021
+    subComments:
+    - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
+      text: Joa

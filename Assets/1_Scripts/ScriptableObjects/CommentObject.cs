@@ -1,9 +1,11 @@
+using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine.Serialization;
 
 namespace ScriptableObjects
 {
-    [System.Serializable] 
+    [Serializable] 
     public class CommentObject
     {
         public CharacterObject character;
@@ -14,6 +16,8 @@ namespace ScriptableObjects
         public short day;
         public short month;
         public short year;
+        
+        [FormerlySerializedAs("subComments")] public List<CommentResponse> responseComments;
 
         [NotNull] public string GetTimestampString()
         {
