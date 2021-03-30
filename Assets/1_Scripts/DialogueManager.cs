@@ -9,6 +9,8 @@ using Utility;
 
 public class DialogueManager : SingletonBehaviour<DialogueManager>
 {
+    [SerializeField] private bool skipDialogue;
+
     private bool _advanceDialogue;
     [CanBeNull] private Coroutine _currentDialogueCoroutine;
     
@@ -36,7 +38,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
     {
         StartDialogue(dialogue, initialDelay, clearPreExistingDialogue);
 
-        while (_currentDialogueCoroutine != null)
+        while (_currentDialogueCoroutine != null && !skipDialogue)
         {
             yield return new WaitForSeconds(1);
         }
@@ -44,7 +46,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
 
     private IEnumerator PrintDialogueCoroutine([NotNull] DialogueObject dialogue, float initialDelay)
     {
-        if (initialDelay > 0)
+        if (initialDelay > 0 && !skipDialogue)
         {
             yield return new WaitForSeconds(initialDelay);
         }
@@ -54,7 +56,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
             if (element.sentManually)
             {
                 PhoneUI.Instance.SetResponseButton(element.text, AdvanceDialogue);
-                while (!_advanceDialogue)
+                while (!_advanceDialogue && !skipDialogue)
                 {
                     yield return null;
                 }
@@ -69,8 +71,11 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
                 {
                     PhoneUI.Instance.ShowFriendIsTyping();
                 }
-                
-                yield return new WaitForSeconds(waitTime);
+
+                if (!skipDialogue)
+                {
+                    yield return new WaitForSeconds(waitTime);
+                }
             }
             
             PhoneUI.Instance.PostMessage(element);
