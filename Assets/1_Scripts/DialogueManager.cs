@@ -13,6 +13,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
 
     private bool _advanceDialogue;
     [CanBeNull] private Coroutine _currentDialogueCoroutine;
+    [CanBeNull] private Coroutine _currentFailSafeCoroutine;
     
     private void AdvanceDialogue()
     {
@@ -24,6 +25,11 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
         if (_currentDialogueCoroutine != null)
         {
             StopCoroutine(_currentDialogueCoroutine);
+        }
+
+        if (_currentFailSafeCoroutine != null)
+        {
+            StopCoroutine(_currentFailSafeCoroutine);
         }
 
         if (clearPreExistingDialogue)
@@ -82,6 +88,18 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
             yield return null;
         }
 
+        if (dialogue.failSafeDialogue != null)
+        {
+            _currentFailSafeCoroutine = StartCoroutine(WaitForFailSafeDialogue(dialogue.failSafeDialogue, dialogue.failSafeDelayInSeconds));
+        }
+        
         _currentDialogueCoroutine = null;
     }
+
+    private IEnumerator WaitForFailSafeDialogue([NotNull] DialogueObject failSafeDialogue, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        StartDialogue(failSafeDialogue, 0);
+    }
+
 }

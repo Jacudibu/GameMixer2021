@@ -42,3 +42,5 @@ MonoBehaviour:
   - text: Is this enough?
     alignment: 1
     sentManually: 1
+  failSafeDialogue: {fileID: 11400000, guid: e3d20bad31929e33ebd0ebef8cb30073, type: 2}
+  failSafeDelayInSeconds: 10

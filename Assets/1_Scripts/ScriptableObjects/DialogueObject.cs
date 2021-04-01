@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UI.Elements;
 using UnityEngine;
 
@@ -8,5 +9,8 @@ namespace ScriptableObjects
     public class DialogueObject : ScriptableObject
     {
         public List<DialogueElement> elements;
+
+        [CanBeNull] public DialogueObject failSafeDialogue;
+        public float failSafeDelayInSeconds;
     }
 }
