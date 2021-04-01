@@ -1,3 +1,4 @@
+using System.Linq;
 using ScriptableObjects;
 using TMPro;
 using UnityEngine;
@@ -17,23 +18,24 @@ namespace UI
         [SerializeField] private TextMeshProUGUI errorMessage;
         [SerializeField] private DialogueObject successDialogue;
 
-        
-        private const string CredentialName = "bla";
-        private const string CredentialPassword = "blub";
-        
+        private ChapterData _chapterData;
+
+        private void Start()
+        {
+            _chapterData = FindObjectOfType<ChapterData>();
+        }
+
         public void Login()
         {
-            Debug.Log("Logging in with " + nameInput.text + " | " + passwordInput.text);
-
-            if (!nameInput.text.ToLower().Trim().Equals(CredentialName.ToLower()))
+            if (_chapterData.validAccountNames.All(x => !x.ToLower().Equals(nameInput.text.ToLower().Trim())))
             {
-                errorMessage.text = "Account not found!";
+                HandleError("Account not found!");
                 return;
             }
             
-            if (!passwordInput.text.ToLower().Trim().Equals(CredentialPassword.ToLower()))
+            if (_chapterData.validPasswords.All(x => !x.ToLower().Equals(passwordInput.text.ToLower().Trim())))
             {
-                errorMessage.text = "Password does not match!";
+                HandleError("Password does not match!");
                 return;
             }
 
@@ -45,6 +47,11 @@ namespace UI
                 DialogueManager.Instance.StartDialogue(successDialogue);
                 closeButton.gameObject.SetActive(false);
             }
+        }
+
+        private void HandleError(string message)
+        {
+            errorMessage.text = message;
         }
 
         private void OnEnable()

@@ -12,6 +12,9 @@ public class ChapterData : MonoBehaviour
 {
     [SerializeField] private CharacterObject character;
     [SerializeField] private DialogueObject initialDialogue;
+
+    public string[] validAccountNames;
+    public string[] validPasswords;
     
     private void Awake()
     {

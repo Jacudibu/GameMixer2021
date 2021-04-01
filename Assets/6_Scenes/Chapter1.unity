@@ -3168,6 +3168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
   initialDialogue: {fileID: 11400000, guid: a89e914aa6f02871392fe8c0d71c6059, type: 2}
+  validAccountNames:
+  - bla
+  validPasswords:
+  - blub
 --- !u!1 &1114697692
 GameObject:
   m_ObjectHideFlags: 0
