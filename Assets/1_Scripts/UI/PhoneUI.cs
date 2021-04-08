@@ -37,7 +37,8 @@ namespace UI
         
         private void Awake()
         {
-            Close();
+            _isOpen = false;
+            RefreshUI();
         }
         
         public void Initialize([NotNull] CharacterObject character)

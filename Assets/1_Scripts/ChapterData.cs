@@ -33,10 +33,10 @@ public class ChapterData : MonoBehaviour
 
     private IEnumerator InitializeCoroutine()
     {
-        var posts = Resources.LoadAll<PostObject>(SceneManager.GetActiveScene().name);
+        var posts = Resources.LoadAll<PostObject>("Posts/" + SceneManager.GetActiveScene().name);
         if (posts.Length == 0) 
         {
-            Debug.LogError("Cannot Load Posts! Unable to find a matching Resource folder for current scene.\n" +
+            Debug.LogError("Cannot Load Posts! You'll need to create some for this chapter first and put them into the respective Posts folder.\n" +
                            "If you want to load posts, make sure they are in a Resource folder with the same name as the scene.");
         }
 
