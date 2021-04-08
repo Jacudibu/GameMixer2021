@@ -19,12 +19,14 @@ namespace UI
             _isOpen = true;
             RefreshUI();
             closedUI.ResetNotificationCount();
+            AudioManager.Instance.PlayPhoneOpenSound();
         }
 
         public void Close()
         {
             _isOpen = false;
             RefreshUI();
+            AudioManager.Instance.PlayPhoneCloseSound();
         }
 
         private void RefreshUI()
@@ -64,6 +66,11 @@ namespace UI
             if (!_isOpen)
             {
                 closedUI.IncreaseNotificationCount();
+                AudioManager.Instance.PlayPhoneNotificationSound();
+            }
+            else
+            {
+                AudioManager.Instance.PlayPhoneMessageSound();
             }
         }
         

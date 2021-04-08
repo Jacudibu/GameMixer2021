@@ -18,6 +18,7 @@ namespace UI
         [Space(10)]
         [SerializeField] private Transform contentParent;
         [SerializeField] private Button responseButton;
+        [SerializeField] private TextMeshProUGUI responseButtonText;
         [SerializeField] private TextMeshProUGUI friendIsTyping;
         [Space(10)]
         [SerializeField] private Image friendProfileImage;
@@ -27,7 +28,6 @@ namespace UI
 
         private Coroutine _scrollRoutine;
                 
-        private TextMeshProUGUI _responseButtonText;
         private ScrollRect _scrollRect;
 
         private Action _onResponseButtonClicked;
@@ -35,7 +35,6 @@ namespace UI
         private void Awake()
         {
             _scrollRect = GetComponentInChildren<ScrollRect>();
-            _responseButtonText = responseButton.GetComponentInChildren<TextMeshProUGUI>();
         }
         
         private void OnEnable()
@@ -54,12 +53,13 @@ namespace UI
         public void SetResponseButton(string text, [NotNull] Action onResponseButtonClick)
         {
             _onResponseButtonClicked = onResponseButtonClick;
-            _responseButtonText.text = text;
+            responseButtonText.text = text;
             responseButton.gameObject.SetActive(true);
         }
 
         public void OnResponseButtonClick()
         {
+            AudioManager.Instance.PlayPhoneResponseButtonSound();
             responseButton.gameObject.SetActive(false);
             var lastAction = _onResponseButtonClicked;
             _onResponseButtonClicked = null;

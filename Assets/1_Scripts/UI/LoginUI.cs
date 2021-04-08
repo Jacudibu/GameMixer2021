@@ -39,6 +39,7 @@ namespace UI
                 return;
             }
 
+            AudioManager.Instance.PlaySuccessfulLoginSound();
             inputParent.SetActive(false);
             successParent.SetActive(true);
 
@@ -51,6 +52,7 @@ namespace UI
 
         private void HandleError(string message)
         {
+            AudioManager.Instance.PlayWrongLonginSound();
             errorMessage.text = message;
         }
 
@@ -62,6 +64,8 @@ namespace UI
             
             inputParent.SetActive(true);
             successParent.SetActive(false);
+            
+            AudioManager.Instance.PlayLoginButtonSound();
         }
     }
 }
