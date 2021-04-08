@@ -5,6 +5,7 @@ using JetBrains.Annotations;
 using ScriptableObjects;
 using UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utility;
 
 public class DialogueManager : SingletonBehaviour<DialogueManager>
@@ -88,12 +89,22 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
             yield return null;
         }
 
+        OnDialogueEnd(dialogue);
+    }
+
+    private void OnDialogueEnd([NotNull] DialogueObject dialogue)
+    {
         if (dialogue.failSafeDialogue != null)
         {
             _currentFailSafeCoroutine = StartCoroutine(WaitForFailSafeDialogue(dialogue.failSafeDialogue, dialogue.failSafeDelayInSeconds));
         }
         
         _currentDialogueCoroutine = null;
+
+        if (dialogue.sceneLoadedAtEnd != null)
+        {
+            SceneManager.LoadScene(dialogue.sceneLoadedAtEnd.name);
+        }
     }
 
     private IEnumerator WaitForFailSafeDialogue([NotNull] DialogueObject failSafeDialogue, float delay)

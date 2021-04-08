@@ -19,3 +19,9 @@ MonoBehaviour:
   - text: Wohooohooooo!
     alignment: 0
     sentManually: 0
+  - text: To the next scene!
+    alignment: 1
+    sentManually: 1
+  failSafeDialogue: {fileID: 0}
+  failSafeDelayInSeconds: 0
+  sceneLoadedAtEnd: {fileID: 102900000, guid: c3aa85951fb2d624f9736159690687c0, type: 3}
