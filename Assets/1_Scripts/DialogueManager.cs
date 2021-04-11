@@ -5,7 +5,6 @@ using JetBrains.Annotations;
 using ScriptableObjects;
 using UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Utility;
 
 public class DialogueManager : SingletonBehaviour<DialogueManager>
@@ -103,7 +102,7 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
 
         if (dialogue.sceneLoadedAtEnd != null)
         {
-            SceneManager.LoadScene(dialogue.sceneLoadedAtEnd.name);
+            ScreenFade.Instance.FadeToBlackThenLoadScene(dialogue.sceneLoadedAtEnd);
         }
     }
 
