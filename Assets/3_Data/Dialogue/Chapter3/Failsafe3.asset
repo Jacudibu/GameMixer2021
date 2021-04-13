@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Failsafe3
   m_EditorClassIdentifier: 
   elements:
-  - text: level1.Failsafe3.1.C1
+  - text: level3.Failsafe3.1.C3
     alignment: 0
     sentManually: 0
-  - text: level1.Failsafe3.2.P
+  - text: level3.Failsafe3.2.P
     alignment: 1
     sentManually: 1
   failSafeDialogue: {fileID: 0}

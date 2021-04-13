@@ -249,8 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b92e67e4d9b452ca4b37b608807ede8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
-  initialDialogue: {fileID: 11400000, guid: a89e914aa6f02871392fe8c0d71c6059, type: 2}
+  character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
+  initialDialogue: {fileID: 11400000, guid: 61507328176712d8d86462a6c00e514b, type: 2}
   validAccountNames:
   - bla
   validPasswords:

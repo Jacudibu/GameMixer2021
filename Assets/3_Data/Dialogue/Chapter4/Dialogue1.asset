@@ -10,13 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8a0f089d2b496c3a009a69453701ee, type: 3}
-  m_Name: Failsafe3
+  m_Name: Dialogue1
   m_EditorClassIdentifier: 
   elements:
-  - text: level1.Failsafe3.1.C1
+  - text: level4.Dialogue1.1.C4
     alignment: 0
     sentManually: 0
-  - text: level1.Failsafe3.2.P
+  - text: level4.Dialogue1.2A.P
+    alignment: 1
+    sentManually: 1
+  - text: level4.Dialogue1.2B.P
+    alignment: 1
+    sentManually: 0
+  - text: level4.Dialogue1.3.C4
+    alignment: 0
+    sentManually: 0
+  - text: level4.Dialogue1.4.P
+    alignment: 1
+    sentManually: 1
+  - text: level4.Dialogue1.5.C4
+    alignment: 0
+    sentManually: 0
+  - text: level4.Dialogue1.6.P
     alignment: 1
     sentManually: 1
   failSafeDialogue: {fileID: 0}

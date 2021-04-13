@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8a0f089d2b496c3a009a69453701ee, type: 3}
-  m_Name: Failsafe3
+  m_Name: Failsafe1
   m_EditorClassIdentifier: 
   elements:
-  - text: level1.Failsafe3.1.C1
+  - text: level3.Failsafe1.1.C3
     alignment: 0
     sentManually: 0
-  - text: level1.Failsafe3.2.P
+  - text: level3.Failsafe1.2.P
     alignment: 1
     sentManually: 1
-  failSafeDialogue: {fileID: 0}
-  failSafeDelayInSeconds: 0
+  - text: level3.Failsafe1.3.C3
+    alignment: 0
+    sentManually: 0
+  failSafeDialogue: {fileID: 11400000, guid: 32d9552a85880c291ac7e7768d4758cb, type: 2}
+  failSafeDelayInSeconds: 180
   sceneLoadedAtEnd: {fileID: 0}

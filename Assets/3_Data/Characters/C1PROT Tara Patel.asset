@@ -15,11 +15,16 @@ MonoBehaviour:
   profilePicture: {fileID: 21300000, guid: ad1b83d28fff1cc5db01744fb210a671, type: 3}
   firstName: Tara
   lastName: Patel
-  location: Berlin
+  location: level1.AboutMe.Location
   dayOfBirth: 14
   monthOfBirth: 3
   yearOfBirth: 2002
+  job: level1.AboutMe.job
+  education: level1.AboutMe.education
+  address: level1.AboutMe.contact.address
+  phone: level1.AboutMe.contact.phone
+  email: level1.AboutMe.contact.email
   hobbies:
-  - Playing with my dog, Lucie!
-  - Playing soccer #ClassOf'02
-  - Eating ice cream
+  - level1.Hobbies.1
+  - level1.Hobbies.2
+  - level1.Hobbies.3
