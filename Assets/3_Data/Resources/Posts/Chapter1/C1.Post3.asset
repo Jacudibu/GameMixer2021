@@ -23,64 +23,49 @@ MonoBehaviour:
   comments:
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: level1.Feed.Post3.comment1
-    minutes: 23
+    minute: 23
     hour: 17
     day: 18
     month: 4
     year: 2021
+    responseComments: []
   - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
     text: level1.Feed.Post3.comment2
-    minutes: 58
+    minute: 58
     hour: 17
     day: 18
     month: 4
     year: 2021
+    responseComments: []
   - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
     text: level1.Feed.Post3.comment3
-    minutes: 12
+    minute: 12
     hour: 18
     day: 18
     month: 4
     year: 2021
-  - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
-    text: level1.Feed.Post3.comment3.response1
-    minutes: 13
-    hour: 18
-    day: 18
-    month: 4
-    year: 2021
-  - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
-    text: level1.Feed.Post3.comment3.response2
-    minutes: 16
-    hour: 18
-    day: 18
-    month: 4
-    year: 2021
+    responseComments:
+    - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
+      text: level1.Feed.Post3.comment3.response1
+    - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+      text: level1.Feed.Post3.comment3.response2
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level1.Feed.Post3.comment4
-    minutes: 34
+    minute: 34
     hour: 22
     day: 18
     month: 4
     year: 2021
-  - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
-    text: level1.Feed.Post3.comment4.response1
-    minutes: 19
-    hour: 9
-    day: 19
-    month: 4
-    year: 2021
+    responseComments:
+    - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+      text: level1.Feed.Post3.comment4.response1
   - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
     text: level1.Feed.Post3.comment5
-    minutes: 13
+    minute: 13
     hour: 21
     day: 20
     month: 4
     year: 2021
-  - character: {fileID: 11400000, guid: f4229289979116f418eb5b7549ba9fd1, type: 2}
-    text: level1.Feed.Post3.comment5.response1
-    minutes: 20
-    hour: 22
-    day: 20
-    month: 4
-    year: 2021
+    responseComments:
+    - character: {fileID: 11400000, guid: f4229289979116f418eb5b7549ba9fd1, type: 2}
+      text: level1.Feed.Post3.comment5.response1
