@@ -36,12 +36,6 @@ MonoBehaviour:
     day: 27
     month: 3
     year: 2021
-    responseComments: []
-  - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
-    text: level1.Feed.Post1.comment3.response1
-    minute: 49
-    hour: 12
-    day: 27
-    month: 3
-    year: 2021
-    responseComments: []
+    responseComments:
+    - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+      text: level1.Feed.Post1.comment3.response1

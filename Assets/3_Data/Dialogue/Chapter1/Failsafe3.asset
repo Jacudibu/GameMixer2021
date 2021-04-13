@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a0f089d2b496c3a009a69453701ee, type: 3}
+  m_Name: Failsafe3
+  m_EditorClassIdentifier: 
+  elements:
+  - text: level1.Failsafe3.1.C1
+    alignment: 0
+    sentManually: 0
+  - text: level1.Failsafe3.2.P
+    alignment: 1
+    sentManually: 1
+  failSafeDialogue: {fileID: 0}
+  failSafeDelayInSeconds: 0
+  sceneLoadedAtEnd: {fileID: 102900000, guid: 5919927b2f5afba44b0fbe1f9175f057, type: 3}

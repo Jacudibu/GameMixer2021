@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8a0f089d2b496c3a009a69453701ee, type: 3}
-  m_Name: TestWinDialogue
+  m_Name: Failsafe2
   m_EditorClassIdentifier: 
   elements:
-  - text: I got it!
-    alignment: 1
-    sentManually: 1
-  - text: Wohooohooooo!
+  - text: level1.Failsafe2.1.C1
     alignment: 0
     sentManually: 0
-  - text: To the next scene!
+  - text: level1.Failsafe2.2A.P
     alignment: 1
     sentManually: 1
-  failSafeDialogue: {fileID: 0}
-  failSafeDelayInSeconds: 0
-  sceneLoadedAtEnd: {fileID: 102900000, guid: 5919927b2f5afba44b0fbe1f9175f057, type: 3}
+  - text: level1.Failsafe2.2B.P
+    alignment: 1
+    sentManually: 0
+  failSafeDialogue: {fileID: 11400000, guid: cedafd6df2d32e13f941ea8bf324cebe, type: 2}
+  failSafeDelayInSeconds: 180
+  sceneLoadedAtEnd: {fileID: 0}

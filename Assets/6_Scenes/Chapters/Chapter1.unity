@@ -249,12 +249,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b92e67e4d9b452ca4b37b608807ede8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
-  initialDialogue: {fileID: 11400000, guid: a89e914aa6f02871392fe8c0d71c6059, type: 2}
+  character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
+  initialDialogue: {fileID: 11400000, guid: 9ce9d8982718c96ed91808cd8dce2644, type: 2}
   validAccountNames:
-  - bla
+  - Tara.P@gmailer.com
   validPasswords:
-  - blub
+  - Lucy02
+  - Lucy2002
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0
