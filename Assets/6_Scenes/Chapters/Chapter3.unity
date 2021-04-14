@@ -257,6 +257,7 @@ MonoBehaviour:
   validPasswords:
   - ilovefootball
   - ilovefoobar
+  - i<3football
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0
