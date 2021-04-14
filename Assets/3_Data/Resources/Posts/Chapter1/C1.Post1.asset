@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba7ae4fff0007113a39ae6331424106, type: 3}
   m_Name: C1.Post1
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: dcbe6bdbafc85932fbb2694e15f4219e, type: 3}
+  image: {fileID: 21300000, guid: f16e0d066cc0608cc878dbb071a86fcd, type: 3}
   character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
   text: level1.Feed.Post1
   minute: 14

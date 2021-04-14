@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba7ae4fff0007113a39ae6331424106, type: 3}
   m_Name: C1.Post4
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 9ce3deff0e200115e819f5013ca2d735, type: 3}
+  image: {fileID: 21300000, guid: 669c6369c27e36d30a41216746d19584, type: 3}
   character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
   text: level1.Feed.Post4
   minute: 58
@@ -23,22 +23,25 @@ MonoBehaviour:
   comments:
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level1.Feed.Post4.comment1
-    minutes: 11
+    minute: 11
     hour: 11
     day: 28
     month: 4
     year: 2021
+    responseComments: []
   - character: {fileID: 11400000, guid: f4229289979116f418eb5b7549ba9fd1, type: 2}
     text: level1.Feed.Post4.comment2
-    minutes: 38
+    minute: 38
     hour: 11
     day: 28
     month: 4
     year: 2021
+    responseComments: []
   - character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
     text: level1.Feed.Post4.comment3
-    minutes: 22
+    minute: 22
     hour: 12
     day: 28
     month: 4
     year: 2021
+    responseComments: []
