@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7f02530d2d4b22ab866802338524c9, type: 3}
   m_Name: Shaurya Acharya
   m_EditorClassIdentifier: 
-  profilePicture: {fileID: 21300000, guid: e4afa280b0594d557acc1b9a9eb8bf09, type: 3}
+  profilePicture: {fileID: 21300000, guid: 50e7fbe74a056dc1b9f4273ded8272a7, type: 3}
   firstName: Shaurya
   lastName: Acharya
   location: Falkensee

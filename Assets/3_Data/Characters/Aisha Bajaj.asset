@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7f02530d2d4b22ab866802338524c9, type: 3}
   m_Name: Aisha Bajaj
   m_EditorClassIdentifier: 
-  profilePicture: {fileID: 0}
+  profilePicture: {fileID: 21300000, guid: ad1b83d28fff1cc5db01744fb210a671, type: 3}
   firstName: Aisha
   lastName: Bajaj
   location: level4.AboutMe.Location
