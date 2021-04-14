@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Object firstLevel;
+    [SerializeField] private int firstLevelIndex;
     [SerializeField] private GameObject localizationButtons;
     [SerializeField] private GameObject organizerLogos;
     [SerializeField] private GameObject mainInterface;
@@ -11,9 +11,8 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlayButtonPressed()
     {
-        SceneManager.LoadScene(firstLevel.name);
+        SceneManager.LoadScene(firstLevelIndex);
     }
-    
     
     public void OnLanguageSelected()
     {

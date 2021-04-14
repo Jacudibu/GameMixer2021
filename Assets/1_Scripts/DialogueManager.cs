@@ -100,9 +100,9 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
         
         _currentDialogueCoroutine = null;
 
-        if (dialogue.sceneLoadedAtEnd != null)
+        if (dialogue.sceneIndexLoadedAtEnd > 0)
         {
-            ScreenFade.Instance.FadeToBlackThenLoadScene(dialogue.sceneLoadedAtEnd);
+            ScreenFade.Instance.FadeToBlackThenLoadScene(dialogue.sceneIndexLoadedAtEnd);
         }
     }
 

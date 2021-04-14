@@ -16,6 +16,6 @@ namespace ScriptableObjects
         public float failSafeDelayInSeconds;
 
         [Tooltip("This scene will be loaded once the dialogue is done.")]
-        [CanBeNull] public Object sceneLoadedAtEnd;
+        public int sceneIndexLoadedAtEnd = -1;
     }
 }

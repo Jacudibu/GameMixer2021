@@ -1,5 +1,4 @@
 using System.Collections;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,10 +16,10 @@ namespace UI
             FadeFromBlack();
         }
 
-        public void FadeToBlackThenLoadScene([NotNull] Object sceneAsset)
+        public void FadeToBlackThenLoadScene(int sceneIndex)
         {
             StartCoroutine(Fade(0, 1));
-            StartCoroutine(LoadSceneAfterDelay(fadeSpeed * 1.25f, sceneAsset));
+            StartCoroutine(LoadSceneAfterDelay(fadeSpeed * 1.25f, sceneIndex));
         }
 
         public void FadeFromBlack()
@@ -28,10 +27,10 @@ namespace UI
             StartCoroutine(Fade(1, 0));
         }
 
-        private IEnumerator LoadSceneAfterDelay(float delay, [NotNull] Object sceneAsset)
+        private IEnumerator LoadSceneAfterDelay(float delay, int sceneIndex)
         {
             yield return new WaitForSeconds(delay);
-            SceneManager.LoadScene(sceneAsset.name);
+            SceneManager.LoadScene(sceneIndex);
         }
 
         private IEnumerator Fade(float fromAlpha, float toAlpha)

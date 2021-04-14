@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8410f422f56ea965b96ef651deedf48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 102900000, guid: 2b198bea9ea1dc8eb9ed1416aea12463, type: 3}
+  nextScene: 3
   text: infoUI.chapter1
   sourceTitle: infoUI.chapter1.source
   sourceURL: infoUI.chapter1.source.URL
