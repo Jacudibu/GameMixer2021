@@ -16,6 +16,7 @@ namespace UI
 
         [SerializeField] private TextMeshProUGUI errorMessage;
 
+        private bool _wasAccountNameCorrectAtLeastOnce;
         private ChapterData _chapterData;
 
         private void Start()
@@ -30,6 +31,10 @@ namespace UI
                 HandleError("Account not found!");
                 return;
             }
+
+            _wasAccountNameCorrectAtLeastOnce = true;
+            nameInput.readOnly = true;
+            nameInput.interactable = false;
             
             if (_chapterData.validPasswords.All(x => !x.ToLower().Equals(passwordInput.text.ToLower().Trim())))
             {
@@ -53,7 +58,10 @@ namespace UI
         private void OnEnable()
         {
             errorMessage.text = "";
-            nameInput.text = "";
+            if (!_wasAccountNameCorrectAtLeastOnce)
+            {
+                nameInput.text = "";
+            }
             passwordInput.text = "";
             
             inputParent.SetActive(true);
