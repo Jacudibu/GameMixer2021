@@ -10,11 +10,11 @@ namespace ScriptableObjects
         public CharacterObject character;
         public string text;
 
-        public short minute;
-        public short hour;
-        public short day;
-        public short month;
-        public short year;
+        [Range(0,59)] public short minute;
+        [Range(0,23)] public short hour;
+        [Range(1,30)] public short day;
+        [Range(1,12)] public short month;
+        public short year = 2021;
         
         public CommentObject[] comments;
 

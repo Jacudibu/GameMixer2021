@@ -15,10 +15,10 @@ MonoBehaviour:
   image: {fileID: 0}
   character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
   text: level4.Feed.Post3
-  minute: 0
-  hour: 0
-  day: 0
-  month: 0
+  minute: 30
+  hour: 12
+  day: 15
+  month: 4
   year: 2021
   comments:
   - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
