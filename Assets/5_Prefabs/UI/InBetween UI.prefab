@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: infoUI.ContinueButton
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ab01f02fb716fd9fbceadf0166c586e, type: 2}
   m_sharedMaterial: {fileID: 75444530589890530, guid: 7ab01f02fb716fd9fbceadf0166c586e, type: 2}
@@ -892,3 +892,4 @@ MonoBehaviour:
   text: {fileID: 2203579765550262976}
   sourceTitle: {fileID: 2203579766962995193}
   sourceURL: {fileID: 2203579766773460755}
+  buttonText: {fileID: 2203579765188634158}

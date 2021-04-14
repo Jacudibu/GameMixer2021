@@ -8,6 +8,7 @@ namespace UI
         [SerializeField] private TextMeshProUGUI text;
         [SerializeField] private TextMeshProUGUI sourceTitle;
         [SerializeField] private TextMeshProUGUI sourceURL;
+        [SerializeField] private TextMeshProUGUI buttonText;
 
         private InBetweenScreenData _data;
         
@@ -18,6 +19,7 @@ namespace UI
             text.text = LocalizationHelper.Get(_data.text);
             sourceTitle.text = LocalizationHelper.Get(_data.sourceTitle);
             sourceURL.text = LocalizationHelper.Get(_data.sourceURL);
+            buttonText.text = LocalizationHelper.Get("infoUI.ContinueButton");
         }
 
         public void OnContinueButtonClick()
