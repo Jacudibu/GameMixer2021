@@ -36,4 +36,4 @@ MonoBehaviour:
     sentManually: 0
   failSafeDialogue: {fileID: 0}
   failSafeDelayInSeconds: 0
-  sceneLoadedAtEnd: {fileID: 0}
+  sceneLoadedAtEnd: {fileID: 102900000, guid: c992ca3335f6b50f183dbf606948065f, type: 3}

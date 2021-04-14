@@ -34,6 +34,6 @@ MonoBehaviour:
   - text: level4.Dialogue1.6.P
     alignment: 1
     sentManually: 1
-  failSafeDialogue: {fileID: 0}
-  failSafeDelayInSeconds: 0
+  failSafeDialogue: {fileID: 11400000, guid: 679866e8a1ff7b31f89eb16195c10762, type: 2}
+  failSafeDelayInSeconds: 180
   sceneLoadedAtEnd: {fileID: 0}
