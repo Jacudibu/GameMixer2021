@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba7ae4fff0007113a39ae6331424106, type: 3}
+  m_Name: Post5
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
+  text: level3.Feed.Post5
+  minute: 0
+  hour: 0
+  day: 0
+  month: 0
+  year: 2021
+  comments:
+  - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
+    text: level3.Feed.Post5.comment1
+    minute: 0
+    hour: 0
+    day: 0
+    month: 0
+    year: 0
+    responseComments:
+    - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
+      text: level3.Feed.Post5.comment1.response1
+  - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
+    text: level3.Feed.Post5.comment2
+    minute: 0
+    hour: 0
+    day: 0
+    month: 0
+    year: 0
+    responseComments:
+    - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
+      text: level3.Feed.Post5.comment2.response1
