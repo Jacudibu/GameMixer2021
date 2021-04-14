@@ -1,5 +1,4 @@
 using System.Linq;
-using ScriptableObjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +15,6 @@ namespace UI
         [SerializeField] private GameObject successParent;
 
         [SerializeField] private TextMeshProUGUI errorMessage;
-        [SerializeField] private DialogueObject successDialogue;
 
         private ChapterData _chapterData;
 
@@ -43,11 +41,7 @@ namespace UI
             inputParent.SetActive(false);
             successParent.SetActive(true);
 
-            if (successDialogue != null)
-            {
-                DialogueManager.Instance.StartDialogue(successDialogue);
-                closeButton.gameObject.SetActive(false);
-            }
+            _chapterData.OnSuccessfulLogin();
         }
 
         private void HandleError(string message)

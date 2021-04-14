@@ -53,7 +53,11 @@ namespace UI
         public void SetResponseButton(string text, [NotNull] Action onResponseButtonClick)
         {
             _onResponseButtonClicked = onResponseButtonClick;
-            responseButtonText.text = text;
+            responseButtonText.text = LocalizationHelper.Get(text);
+            if (responseButtonText.text.Length > 40)
+            {
+                responseButtonText.text = responseButtonText.text.Substring(0, 37) + "...";
+            }
             responseButton.gameObject.SetActive(true);
         }
 

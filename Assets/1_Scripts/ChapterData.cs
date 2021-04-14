@@ -12,6 +12,7 @@ public class ChapterData : MonoBehaviour
 {
     [SerializeField] private CharacterObject character;
     [SerializeField] private DialogueObject initialDialogue;
+    [SerializeField] private DialogueObject successDialogue;
 
     public string[] validAccountNames;
     public string[] validPasswords;
@@ -45,8 +46,8 @@ public class ChapterData : MonoBehaviour
             yield return InitializeLocalization();
         }
 
-        PhoneUI.Instance.Initialize(character);
         LocalizationHelper.SetFriendFirstName(character.firstName);
+        PhoneUI.Instance.Initialize(character);
         
         yield return DialogueManager.Instance.StartDialogueCoroutine(initialDialogue);
         
@@ -77,5 +78,13 @@ public class ChapterData : MonoBehaviour
         MainUI.Instance.gameObject.SetActive(true);
         MainUI.Instance.Initialize(character);
         PostCollection.Instance.Initialize(posts);
+    }
+
+    public void OnSuccessfulLogin()
+    {
+        if (successDialogue != null)
+        {
+            DialogueManager.Instance.StartDialogue(successDialogue);
+        }
     }
 }

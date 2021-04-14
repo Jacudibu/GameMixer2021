@@ -251,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 75a064bc55e511649a542aa65a728c59, type: 2}
   initialDialogue: {fileID: 11400000, guid: 9ce9d8982718c96ed91808cd8dce2644, type: 2}
+  successDialogue: {fileID: 11400000, guid: 3a7fb27747f4a0705887d1206dd62476, type: 2}
   validAccountNames:
   - Tara.P@gmailer.com
   validPasswords:

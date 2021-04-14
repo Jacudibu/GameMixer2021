@@ -251,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
   initialDialogue: {fileID: 11400000, guid: 6741f149aa8ce2117b0c5fce596c76cf, type: 2}
+  successDialogue: {fileID: 11400000, guid: fe7626d5116169e7e9cd3c3dba9a055c, type: 2}
   validAccountNames:
   - paul12@mymail.com
   validPasswords:
@@ -476,6 +477,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593579520461598293, guid: dba09697549a80919aa6cea9451abf15, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593579520943492897, guid: dba09697549a80919aa6cea9451abf15, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6593579521046863160, guid: dba09697549a80919aa6cea9451abf15, type: 3}

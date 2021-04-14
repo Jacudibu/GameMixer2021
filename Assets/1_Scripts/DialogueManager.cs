@@ -70,8 +70,8 @@ public class DialogueManager : SingletonBehaviour<DialogueManager>
             }
             else
             {
-                var waitTime = Math.Max(0.5f, element.text.Length / 75f);
-                waitTime = Math.Min(waitTime, 2.5f); // qq Math.Clamp wasn't there before .Net Standard 2.1
+                var waitTime = Math.Max(1f, element.text.Length / 100f);
+                waitTime = Math.Min(waitTime, 3.5f); // qq Math.Clamp wasn't there before .Net Standard 2.1
 
                 if (element.alignment == HorizontalPosition.Left)
                 {
