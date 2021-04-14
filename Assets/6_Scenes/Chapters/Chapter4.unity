@@ -252,9 +252,9 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
   initialDialogue: {fileID: 11400000, guid: 61507328176712d8d86462a6c00e514b, type: 2}
   validAccountNames:
-  - bla
+  - ashbajaj@mymail.com
   validPasswords:
-  - blub
+  - Ashash#5
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0

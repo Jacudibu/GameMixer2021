@@ -252,9 +252,10 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
   initialDialogue: {fileID: 11400000, guid: 6741f149aa8ce2117b0c5fce596c76cf, type: 2}
   validAccountNames:
-  - bla
+  - paul12@mymail.com
   validPasswords:
-  - blub
+  - ilovefootball
+  - ilovefoobar
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0
