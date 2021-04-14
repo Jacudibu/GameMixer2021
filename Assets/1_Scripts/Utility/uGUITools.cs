@@ -2,7 +2,7 @@
 using UnityEngine;
 
 // Taken from https://forum.unity.com/threads/scripts-useful-4-6-scripts-collection.264161/
-
+#if UNITY_EDITOR
 public class uGUITools : MonoBehaviour {
 	[MenuItem("uGUI/Anchors to Corners %[")]
 	static void AnchorsToCorners(){
@@ -96,3 +96,4 @@ public class uGUITools : MonoBehaviour {
 		}
 	}
 }
+#endif

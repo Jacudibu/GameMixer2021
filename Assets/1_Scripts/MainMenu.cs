@@ -1,16 +1,13 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private SceneAsset firstLevel;
+    [SerializeField] private Object firstLevel;
     [SerializeField] private GameObject localizationButtons;
     [SerializeField] private GameObject organizerLogos;
     [SerializeField] private GameObject mainInterface;
     [SerializeField] private GameObject creditsScreen;
-
-
 
     public void OnPlayButtonPressed()
     {

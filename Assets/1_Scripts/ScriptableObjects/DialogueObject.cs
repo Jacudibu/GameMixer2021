@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UI.Elements;
-using UnityEditor;
 using UnityEngine;
 
 namespace ScriptableObjects
@@ -17,6 +16,6 @@ namespace ScriptableObjects
         public float failSafeDelayInSeconds;
 
         [Tooltip("This scene will be loaded once the dialogue is done.")]
-        [CanBeNull] public SceneAsset sceneLoadedAtEnd;
+        [CanBeNull] public Object sceneLoadedAtEnd;
     }
 }
