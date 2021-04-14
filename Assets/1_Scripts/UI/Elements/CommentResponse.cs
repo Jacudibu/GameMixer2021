@@ -8,7 +8,7 @@ namespace UI.Elements
         {
             characterPicture.sprite = comment.character.profilePicture;
             characterName.text = comment.character.GetNameString();
-            text.text = LocalizationHelper.Get(comment.text);
+            text.text = Localization.Localization.Get(comment.text);
         }
     }
 }

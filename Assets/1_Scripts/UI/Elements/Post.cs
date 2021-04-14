@@ -33,7 +33,7 @@ namespace UI.Elements
                 Destroy(image.gameObject);
             }
             
-            text.text = LocalizationHelper.Get(post.text);
+            text.text = Localization.Localization.Get(post.text);
 
             _commentCollection = GetComponentInChildren<CommentCollection>();
             if (post.comments.Length == 0)

@@ -16,10 +16,10 @@ namespace UI
         {
             _data = FindObjectOfType<InBetweenScreenData>();
 
-            text.text = LocalizationHelper.Get(_data.text);
-            sourceTitle.text = LocalizationHelper.Get(_data.sourceTitle);
-            sourceURL.text = LocalizationHelper.Get(_data.sourceURL);
-            buttonText.text = LocalizationHelper.Get("infoUI.ContinueButton");
+            text.text = Localization.Localization.Get(_data.text);
+            sourceTitle.text = Localization.Localization.Get(_data.sourceTitle);
+            sourceURL.text = Localization.Localization.Get(_data.sourceURL);
+            buttonText.text = Localization.Localization.Get("infoUI.ContinueButton");
         }
 
         public void OnContinueButtonClick()

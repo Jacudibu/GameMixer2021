@@ -47,13 +47,13 @@ namespace UI
         {
             friendProfileImage.sprite = character.profilePicture;
             friendName.text = character.GetNameString();
-            friendIsTyping.text = LocalizationHelper.Get("phoneUI.IsTyping");
+            friendIsTyping.text = Localization.Localization.Get("phoneUI.IsTyping");
         }
 
         public void SetResponseButton(string text, [NotNull] Action onResponseButtonClick)
         {
             _onResponseButtonClicked = onResponseButtonClick;
-            responseButtonText.text = LocalizationHelper.Get(text);
+            responseButtonText.text = Localization.Localization.Get(text);
             if (responseButtonText.text.Length > 40)
             {
                 responseButtonText.text = responseButtonText.text.Substring(0, 37) + "...";
@@ -110,7 +110,7 @@ namespace UI
                 : rightAlignedPrefab;
             
             var instance = Instantiate(prefab, contentParent);
-            instance.GetComponentInChildren<TextMeshProUGUI>().text = LocalizationHelper.Get(message.text);
+            instance.GetComponentInChildren<TextMeshProUGUI>().text = Localization.Localization.Get(message.text);
 
             if (isActiveAndEnabled)
             {
