@@ -22,7 +22,7 @@ namespace UI
             profileImage.sprite = character.profilePicture;
             nameText.text = character.GetNameString();
             dateOfBirthText.text = character.dayOfBirth + " / " + character.monthOfBirth + " / " + character.yearOfBirth;
-            locationText.text = character.location;
+            locationText.text = LocalizationHelper.Get(character.location);
             hobbiesText.text = string.Join("\n", character.hobbies.Select(LocalizationHelper.Get));
         }
 

@@ -40,9 +40,13 @@ public class ChapterData : MonoBehaviour
                            "If you want to load posts, make sure they are in a Resource folder with the same name as the scene.");
         }
 
-        yield return InitializeLocalization();
+        if (!LocalizationHelper.IsInitialized)
+        {
+            yield return InitializeLocalization();
+        }
 
         PhoneUI.Instance.Initialize(character);
+        LocalizationHelper.SetFriendFirstName(character.firstName);
         
         yield return DialogueManager.Instance.StartDialogueCoroutine(initialDialogue);
         
