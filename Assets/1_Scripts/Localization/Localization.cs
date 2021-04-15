@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 using RedScarf.EasyCSV;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace Localization
 
         private static void Initialize()
         {
-            var csvFile = Resources.Load<TextAsset>("csvDump");
+            var csvFile = Resources.LoadAll<TextAsset>("LatestLocalizationDump").Single();
             var test = CsvHelper.Create("Localization", csvFile.text);
         
             foreach (var row in test.RawDataList)
