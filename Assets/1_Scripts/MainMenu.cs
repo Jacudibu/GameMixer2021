@@ -1,48 +1,42 @@
+using Localization;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private int firstLevelIndex;
-    [SerializeField] private GameObject localizationButtons;
-    [SerializeField] private GameObject organizerLogos;
-    [SerializeField] private GameObject mainInterface;
-    [SerializeField] private GameObject creditsScreen;
+    [SerializeField] private TextMeshProUGUI collaborationHeader;
+    [SerializeField] private TextMeshProUGUI creditsHeader;
+
+    private void Awake()
+    {
+        UpdateLocalization(Application.systemLanguage == SystemLanguage.German 
+            ? Language.German 
+            : Language.English);
+    }
 
     public void OnPlayButtonPressed()
     {
         SceneManager.LoadScene(firstLevelIndex);
     }
     
-    public void OnLanguageSelected()
+    public void OnGermanSelected()
     {
-        Debug.Log("You selected a language and can now access the main menu");
-        localizationButtons.SetActive(false);
-        organizerLogos.SetActive(false);
-        mainInterface.SetActive(true);
+        AudioManager.Instance.PlayLoginButtonSound();
+        UpdateLocalization(Language.German);
     }
-    public void OnCreditsSelected()
+
+    public void OnEnglishSelected()
     {
-        Debug.Log("Credits Opened");
-        mainInterface.SetActive(false);
-        creditsScreen.SetActive(true);
+        AudioManager.Instance.PlayLoginButtonSound();
+        UpdateLocalization(Language.English);
     }
-    public void OnBackSelected()
+
+    private void UpdateLocalization(Language language)
     {
-        Debug.Log("Credits Closed");
-        creditsScreen.SetActive(false);
-        mainInterface.SetActive(true);
-    }
-    public void OnChangeLanguageSelected()
-    {
-        Debug.Log("Back to Languages (inverted languages in localization)");
-        mainInterface.SetActive(false);
-        organizerLogos.SetActive(true);
-        localizationButtons.SetActive(true);
-    }
-    public void OnQuitPressed()
-    {
-        Debug.Log("You pressed Quit!");
-        Application.Quit();
+        Localization.Localization.SetLanguage(language);
+        collaborationHeader.text = Localization.Localization.Get("startUI.CollaborationHeader");
+        creditsHeader.text = Localization.Localization.Get("startUI.CreditHeader");
     }
 }

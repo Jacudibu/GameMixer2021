@@ -13,6 +13,8 @@ namespace Localization
         private static readonly Dictionary<string, LocalizedString> Data = new Dictionary<string, LocalizedString>();
         private static string _friendFirstName = "FriendFirstName";
 
+        public static Language SelectedLanguage { get; private set; } = Language.English;
+
         private static void Initialize()
         {
             var csvFile = Resources.LoadAll<TextAsset>("LatestLocalizationDump").Single();
@@ -39,8 +41,8 @@ namespace Localization
                 return key;
             }
 
-            // this is super inefficient but serves its purpose
-            return result.english.Replace("{FriendFirstName}", _friendFirstName);
+            return result.Get(SelectedLanguage)
+                .Replace("{FriendFirstName}", _friendFirstName);
         }
 
         public static void Initialize(string friendName)
@@ -51,6 +53,11 @@ namespace Localization
             }
             
             _friendFirstName = friendName;
+        }
+
+        public static void SetLanguage(Language language)
+        {
+            SelectedLanguage = language;
         }
     }
 }

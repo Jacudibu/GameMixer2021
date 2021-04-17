@@ -1,14 +1,26 @@
+using System;
+
 namespace Localization
 {
     public class LocalizedString
     {
-        public readonly string english;
-        public readonly string german;
+        private readonly string _english;
+        private readonly string _german;
 
         public LocalizedString(string english, string german)
         {
-            this.english = english;
-            this.german = german;
+            _english = english;
+            _german = german;
+        }
+
+        public string Get(Language language)
+        {
+            return language switch
+            {
+                Language.English => _english,
+                Language.German => _german,
+                _ => throw new ArgumentOutOfRangeException(nameof(language), language, "Language not implemented!")
+            };
         }
     }
 }
