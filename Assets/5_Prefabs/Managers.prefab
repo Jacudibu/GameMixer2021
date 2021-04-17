@@ -142,7 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phoneVibrationSound: {fileID: 8300000, guid: ee975d96bd8d972588c6b796094126be, type: 3}
   phoneNotificationSound: {fileID: 8300000, guid: c028bbc6363d2fa86996f5e03b0652f4, type: 3}
-  phoneMessageSound: {fileID: 0}
+  phoneOpenMessageReceivedSound: {fileID: 8300000, guid: 2d41dce903ccd8fd3bbf9d342102c235, type: 3}
+  phoneOpenMessageSentSound: {fileID: 8300000, guid: 125c1b5abe17ce416a01068988f9e7aa, type: 3}
   phoneResponseButtonSound: {fileID: 8300000, guid: 25aaa1e58639c8f43b8e4c8e6c2369f7, type: 3}
   phoneOpenSound: {fileID: 8300000, guid: 06c530ec61195dc359b9eecb69b31610, type: 3}
   phoneCloseSound: {fileID: 8300000, guid: 06c530ec61195dc359b9eecb69b31610, type: 3}

@@ -9,8 +9,8 @@ public class AudioManager : SingletonBehaviour<AudioManager>
 
     [SerializeField] [CanBeNull] private AudioClip phoneVibrationSound;
     [SerializeField] [CanBeNull] private AudioClip phoneNotificationSound;
-    [SerializeField] [CanBeNull] private AudioClip phoneMessageSound;
-    [SerializeField] [CanBeNull] private AudioClip phoneResponseButtonSound;
+    [SerializeField] [CanBeNull] private AudioClip phoneOpenMessageReceivedSound;
+    [SerializeField] [CanBeNull] private AudioClip phoneOpenMessageSentSound;
     [SerializeField] [CanBeNull] private AudioClip phoneOpenSound;
     [SerializeField] [CanBeNull] private AudioClip phoneCloseSound;
     [SerializeField] [CanBeNull] private AudioClip wrongLoginSound;
@@ -22,14 +22,14 @@ public class AudioManager : SingletonBehaviour<AudioManager>
         _audioSource = GetComponent<AudioSource>();
     }
 
-    private void Play([CanBeNull] AudioClip clip)
+    private void Play([CanBeNull] AudioClip clip, float volumeScale = 1)
     {
         if (clip == null)
         {
             return;
         }
 
-        _audioSource.PlayOneShot(clip);
+        _audioSource.PlayOneShot(clip, volumeScale);
     }
 
     public void PlayWrongLonginSound()
@@ -52,10 +52,15 @@ public class AudioManager : SingletonBehaviour<AudioManager>
         Play(phoneNotificationSound);
     }
     
-    public void PlayPhoneMessageSound()
+    public void PlayPhoneOpenMessageSentSound()
     {
-        Play(phoneMessageSound);
-    }    
+        Play(phoneOpenMessageSentSound, 0.02f);
+    }
+    
+    public void PlayPhoneOpenMessageReceivedSound()
+    {
+        Play(phoneOpenMessageReceivedSound, 0.05f);
+    }
     
     public void PlayPhoneOpenSound()
     {
@@ -71,10 +76,4 @@ public class AudioManager : SingletonBehaviour<AudioManager>
     {
         Play(loginButtonSound);
     }
-    
-    public void PlayPhoneResponseButtonSound()
-    {
-        Play(phoneResponseButtonSound);
-    }
-    
 }

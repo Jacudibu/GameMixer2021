@@ -1,4 +1,5 @@
 using System;
+using Enums;
 using JetBrains.Annotations;
 using ScriptableObjects;
 using UI.Elements;
@@ -71,7 +72,14 @@ namespace UI
             }
             else
             {
-                AudioManager.Instance.PlayPhoneMessageSound();
+                if (message.alignment == HorizontalPosition.Left)
+                {
+                    AudioManager.Instance.PlayPhoneOpenMessageReceivedSound();
+                }
+                else
+                {
+                    AudioManager.Instance.PlayPhoneOpenMessageSentSound();
+                }
             }
         }
         

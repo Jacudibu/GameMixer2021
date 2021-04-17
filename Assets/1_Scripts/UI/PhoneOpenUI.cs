@@ -63,7 +63,6 @@ namespace UI
 
         public void OnResponseButtonClick()
         {
-            AudioManager.Instance.PlayPhoneResponseButtonSound();
             responseButton.gameObject.SetActive(false);
             var lastAction = _onResponseButtonClicked;
             _onResponseButtonClicked = null;
