@@ -22,26 +22,11 @@ MonoBehaviour:
   year: 2021
   comments:
   - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
-    text: level1.Feed.Post1.comment1
-    minute: 23
-    hour: 17
-    day: 2
-    month: 4
-    year: 2021
+    text: level1.Feed.Post2.comment1
     responseComments: []
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level1.Feed.Post2.comment2
-    minute: 45
-    hour: 17
-    day: 2
-    month: 4
-    year: 2021
     responseComments: []
   - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
     text: level1.Feed.Post2.comment3
-    minute: 5
-    hour: 21
-    day: 27
-    month: 3
-    year: 2021
     responseComments: []

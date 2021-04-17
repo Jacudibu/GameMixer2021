@@ -1,13 +1,12 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace UI
 {
     public class LoginUI : MonoBehaviour
     {
-        [SerializeField] private Button closeButton;
+        [SerializeField] private GameObject loginButton;
         [SerializeField] private TMP_InputField nameInput;
         [SerializeField] private TMP_InputField passwordInput;
 
@@ -47,6 +46,7 @@ namespace UI
             successParent.SetActive(true);
 
             _chapterData.OnSuccessfulLogin();
+            loginButton.SetActive(false);
         }
 
         private void HandleError(string message)

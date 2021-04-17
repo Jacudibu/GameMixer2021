@@ -4822,7 +4822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c52a71daf18647bb845950a0e981cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeButton: {fileID: 6593579521224627873}
+  loginButton: {fileID: 6593579520782569447}
   nameInput: {fileID: 6593579520590034264}
   passwordInput: {fileID: 6593579520333981768}
   inputParent: {fileID: 6593579519816078530}
