@@ -15,19 +15,28 @@ namespace UI
 
         [SerializeField] private TextMeshProUGUI errorMessage;
 
+        
+        [SerializeField] private TextMeshProUGUI successText;
+        [SerializeField] private TextMeshProUGUI loginButtonText;
+
+        
         private bool _wasAccountNameCorrectAtLeastOnce;
         private ChapterData _chapterData;
 
-        private void Start()
+        private void Awake()
         {
             _chapterData = FindObjectOfType<ChapterData>();
+            nameInput.placeholder.GetComponent<TextMeshProUGUI>().text = Localization.Localization.Get("loginUI.Login");
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = Localization.Localization.Get("loginUI.Password");
+            successText.text = Localization.Localization.Get("loginUI.Success");
+            loginButtonText.text = Localization.Localization.Get("loginUI.Login");
         }
 
         public void Login()
         {
             if (_chapterData.validAccountNames.All(x => !x.ToLower().Equals(nameInput.text.ToLower().Trim())))
             {
-                HandleError("Account not found!");
+                HandleError(Localization.Localization.Get("loginUI.WrongAccount"));
                 return;
             }
 
@@ -37,7 +46,7 @@ namespace UI
             
             if (_chapterData.validPasswords.All(x => !x.ToLower().Equals(passwordInput.text.ToLower().Trim())))
             {
-                HandleError("Password does not match!");
+                HandleError(Localization.Localization.Get("loginUI.WrongPassword"));
                 return;
             }
 

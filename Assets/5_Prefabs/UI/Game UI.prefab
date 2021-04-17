@@ -5761,6 +5761,8 @@ MonoBehaviour:
   inputParent: {fileID: 6593579519816078530}
   successParent: {fileID: 6593579521460302668}
   errorMessage: {fileID: 6593579521052521370}
+  successText: {fileID: 6593579520159037972}
+  loginButtonText: {fileID: 6593579520957435481}
 --- !u!1 &6593579520943492896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6718,6 +6720,7 @@ MonoBehaviour:
   locationText: {fileID: 8259422142456553414}
   mailText: {fileID: 3056242041485456586}
   hobbiesText: {fileID: 4907151908347303274}
+  loginButtonText: {fileID: 6593579520262560177}
 --- !u!1 &6593579521224627875
 GameObject:
   m_ObjectHideFlags: 0
