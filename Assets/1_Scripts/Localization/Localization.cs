@@ -19,14 +19,19 @@ namespace Localization
         {
             var csvFile = Resources.LoadAll<TextAsset>("LatestLocalizationDump").Single();
             var test = CsvHelper.Create("Localization", csvFile.text);
-        
+
             foreach (var row in test.RawDataList)
             {
                 if (string.IsNullOrEmpty(row[0]))
                 {
                     continue;
                 }
-            
+
+                if (Data.ContainsKey(row[0]))
+                {
+                    Debug.LogWarning("Duplicate Localization Key found: " + row[0]);
+                }
+
                 Data[row[0]] = new LocalizedString(row[1], row[2]);
             }
 
@@ -38,6 +43,7 @@ namespace Localization
         {
             if (!Data.TryGetValue(key, out var result))
             {
+                Debug.LogWarning("Localization Key not found: " + key);
                 return key;
             }
 
