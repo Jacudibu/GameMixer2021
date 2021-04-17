@@ -38,5 +38,5 @@ MonoBehaviour:
     alignment: 1
     sentManually: 0
   failSafeDialogue: {fileID: 11400000, guid: f7085c2e35335ccf98ff14fa6221f58e, type: 2}
-  failSafeDelayInSeconds: 180
-  sceneLoadedAtEnd: {fileID: 0}
+  failSafeDelayInSeconds: 300
+  sceneIndexLoadedAtEnd: -1
