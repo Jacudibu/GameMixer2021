@@ -255,8 +255,8 @@ MonoBehaviour:
   validAccountNames:
   - Tara.P@gmailer.com
   validPasswords:
-  - Lucy02
-  - Lucy2002
+  - level1.password1
+  - level1.password2
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0

@@ -255,8 +255,8 @@ MonoBehaviour:
   validAccountNames:
   - ashbajaj@mymail.com
   validPasswords:
-  - Ashash#5
-  - Ash#5
+  - level4.password1
+  - level4.password2
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0

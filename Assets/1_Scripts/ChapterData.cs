@@ -41,11 +41,20 @@ public class ChapterData : MonoBehaviour
         }
 
         Localization.Localization.Initialize(character.firstName);
+        LocalizePasswords();
         PhoneUI.Instance.Initialize(character);
         
         yield return DialogueManager.Instance.StartDialogueCoroutine(initialDialogue);
         
         LoadWebsite(posts);
+    }
+
+    private void LocalizePasswords()
+    {
+        for (var i = 0; i < validPasswords.Length; i++)
+        {
+            validPasswords[i] = Localization.Localization.Get(validPasswords[i]);
+        }
     }
 
     private void LoadWebsite([NotNull] IEnumerable<PostObject> posts)

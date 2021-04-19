@@ -255,10 +255,8 @@ MonoBehaviour:
   validAccountNames:
   - paul12@mymail.com
   validPasswords:
-  - ilovefootball
-  - ilovefoobar
-  - i<3football
-  - Football
+  - level3.password1
+  - level3.password2
 --- !u!1 &1976329297
 GameObject:
   m_ObjectHideFlags: 0
