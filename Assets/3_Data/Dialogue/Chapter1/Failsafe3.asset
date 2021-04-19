@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Failsafe3
   m_EditorClassIdentifier: 
   elements:
-  - text: level1.Failsafe3.1.C1
+  - text: level1.Dialogue3.1.C1
     alignment: 0
     sentManually: 0
-  - text: level1.Failsafe3.2.P
+  - text: level1.Dialogue3.2.P
     alignment: 1
     sentManually: 1
-  failSafeDialogue: {fileID: 0}
-  failSafeDelayInSeconds: 0
-  sceneLoadedAtEnd: {fileID: 102900000, guid: 5919927b2f5afba44b0fbe1f9175f057, type: 3}
+  - text: level1.Dialogue3.3.P
+    alignment: 1
+    sentManually: 0
+  failSafeDialogue: {fileID: 11400000, guid: c107e25d46de3fa36be6cfa2a0b253de, type: 2}
+  failSafeDelayInSeconds: 180
   sceneIndexLoadedAtEnd: 6

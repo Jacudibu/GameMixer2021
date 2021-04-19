@@ -37,6 +37,9 @@ MonoBehaviour:
   - text: level4.FailSafe2.5B.P
     alignment: 1
     sentManually: 0
+  - text: level4.FailSafe2.6.C4
+    alignment: 0
+    sentManually: 0
   failSafeDialogue: {fileID: 11400000, guid: 76668edab4b68164390645965c4fc1f6, type: 2}
   failSafeDelayInSeconds: 300
   sceneIndexLoadedAtEnd: -1

@@ -26,7 +26,7 @@ namespace UI
         private void Awake()
         {
             _chapterData = FindObjectOfType<ChapterData>();
-            nameInput.placeholder.GetComponent<TextMeshProUGUI>().text = Localization.Localization.Get("loginUI.Login");
+            nameInput.placeholder.GetComponent<TextMeshProUGUI>().text = Localization.Localization.Get("loginUI.Account");
             passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = Localization.Localization.Get("loginUI.Password");
             successText.text = Localization.Localization.Get("loginUI.Success");
             loginButtonText.text = Localization.Localization.Get("loginUI.Login");

@@ -8,7 +8,7 @@ namespace Localization
 {
     public static class Localization
     {
-        public static bool IsInitialized { get; private set; }
+        private static bool _isInitialized;
 
         private static readonly Dictionary<string, LocalizedString> Data = new Dictionary<string, LocalizedString>();
         private static string _friendFirstName = "FriendFirstName";
@@ -35,7 +35,7 @@ namespace Localization
                 Data[row[0]] = new LocalizedString(row[1], row[2]);
             }
 
-            IsInitialized = true;
+            _isInitialized = true;
         }
 
         [NotNull]
@@ -53,7 +53,7 @@ namespace Localization
 
         public static void Initialize(string friendName)
         {
-            if (!IsInitialized)
+            if (!_isInitialized)
             {
                 Initialize();
             }

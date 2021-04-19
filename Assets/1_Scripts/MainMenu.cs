@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
+        Localization.Localization.Initialize("");
         UpdateLocalization(Application.systemLanguage == SystemLanguage.German 
             ? Language.German 
             : Language.English);

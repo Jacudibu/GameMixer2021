@@ -16,18 +16,36 @@ MonoBehaviour:
   - text: level1.Dialogue1.1.C1
     alignment: 0
     sentManually: 0
-  - text: level1.Dialogue1.2A.P
+  - text: level1.Dialogue1.2.P
     alignment: 1
     sentManually: 1
-  - text: level1.Dialogue1.2B.P
-    alignment: 1
-    sentManually: 0
   - text: level1.Dialogue1.3.C1
     alignment: 0
     sentManually: 0
-  - text: level1.Dialogue1.4.P
+  - text: level1.Dialogue1.4A.P
     alignment: 1
     sentManually: 1
+  - text: level1.Dialogue1.4B.P
+    alignment: 1
+    sentManually: 0
+  - text: level1.Dialogue1.5.C1
+    alignment: 0
+    sentManually: 0
+  - text: level1.Dialogue1.6.P
+    alignment: 1
+    sentManually: 1
+  - text: level1.Dialogue1.7.P
+    alignment: 1
+    sentManually: 0
+  - text: level1.Dialogue1.8.C1
+    alignment: 0
+    sentManually: 0
+  - text: level1.Dialogue1.9.P
+    alignment: 1
+    sentManually: 1
+  - text: level1.Dialogue1.10.P
+    alignment: 1
+    sentManually: 0
   failSafeDialogue: {fileID: 11400000, guid: f7d9a0359658efd21994d9a62130577a, type: 2}
   failSafeDelayInSeconds: 300
   sceneIndexLoadedAtEnd: -1

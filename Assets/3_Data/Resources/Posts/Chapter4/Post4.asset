@@ -28,4 +28,8 @@ MonoBehaviour:
       text: level4.Feed.Post4.comment1.response1
   - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
     text: level4.Feed.Post4.comment2
-    responseComments: []
+    responseComments:
+    - character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
+      text: level4.Feed.Post4.comment2.response1
+    - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
+      text: level4.Feed.Post4.comment2.response2
