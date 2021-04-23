@@ -23,19 +23,9 @@ MonoBehaviour:
   comments:
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level3.Feed.Post1.comment1
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
-    responseComments:
-    - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
-      text: level3.Feed.Post1.comment1.response1
-  - character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
-    text: level3.Feed.Post1.comment2
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments: []
+  - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
+    text: level3.Feed.Post1.comment2
+    responseComments:
+    - character: {fileID: 11400000, guid: e0be79b38d6a4224ba36680c22490366, type: 2}
+      text: level3.Feed.Post1.comment2.response1

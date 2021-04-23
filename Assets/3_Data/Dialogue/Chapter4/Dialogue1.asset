@@ -28,10 +28,25 @@ MonoBehaviour:
   - text: level4.Dialogue1.4.P
     alignment: 1
     sentManually: 1
-  - text: level4.Dialogue1.5.C4
+  - text: level4.Dialogue1.5A.C4
     alignment: 0
     sentManually: 0
-  - text: level4.Dialogue1.6.P
+  - text: level4.Dialogue1.5B.C4
+    alignment: 0
+    sentManually: 0
+  - text: level4.Dialogue1.6A.P
+    alignment: 1
+    sentManually: 1
+  - text: level4.Dialogue1.6B.P
+    alignment: 1
+    sentManually: 0
+  - text: level4.Dialogue1.6C.P
+    alignment: 1
+    sentManually: 0
+  - text: level4.Dialogue1.7.C3
+    alignment: 0
+    sentManually: 0
+  - text: level4.Dialogue1.8.P
     alignment: 1
     sentManually: 1
   failSafeDialogue: {fileID: 11400000, guid: 679866e8a1ff7b31f89eb16195c10762, type: 2}

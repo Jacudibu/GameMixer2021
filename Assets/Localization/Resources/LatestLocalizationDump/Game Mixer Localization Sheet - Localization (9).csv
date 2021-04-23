@@ -66,7 +66,7 @@ level1.Feed.Post1,Me and Lucy went out for icecream. Isn't she the cutest?,War m
 level1.Feed.Post1.comment1,"Nice, i hope you had fun! <3","Schön, Ich hoffe ihr hattet Spaß! <3",,Aynur,
 level1.Feed.Post1.comment2,"You guys never sit still, huh?","Ihr zwei sitzt auch nie still, oder?",,Paul,
 level1.Feed.Post1.comment3,"Oh man, why didn't you say something? Me and Bernie woul've loved to join #dogLovers #dogs4life",Oh Mann... Warum hast du nicht Bescheid gegeben? Bernie und ich wären gerne dabei gewesen #dogLovers #dogs4life,,Sarah,
-level1.Feed.Post1.comment3.response1,"Haha, I'm sorry Maria. Next time! <3","Haha, Sorry Maria. Nächstes Mal! <3",,TARA,
+level1.Feed.Post1.comment3.response1,"Haha, I'm sorry Sarah. Next time! <3","Haha, sorry Sarah. Nächstes Mal! <3",,TARA,
 ,,,,,
 level1.Feed.Post2,Check out my new haircut! #JustDoIt #brave,Neuer Haarschnitt! #JustDoIt #brave,,TARA [image of {player} //filler] ,
 level1.Feed.Post2.comment1,"Sorry, I can't tell the difference. I hope it wasn't to expensive.","Sorry, ich erkenne keinen Unterschied. Ich hoffe es war nicht teuer.",,Paul,
@@ -237,18 +237,20 @@ level2.Dialogue2.2.P,"Glad I could help! Good idea, most of the shared informati
 ,,,,,
 ,,,,,
 level3.email ,paul12@mymail.com,paul12@mymail.com,,,
-level3.password1,ilovefootball,Fußballforever,,,
-level3.password2,Football,Fußball,,,
+level3.password1,footballforever,Fußballforever,,,
+level3.password2,football,Fußballmannschaft,,,
 ,,,,,
 level3.Dialogue1.1.C3,"Hey! I heard that you are helping people recover their password and accounts, can you help me too?","Hi, Ich habe gehört dass du Leuten hilfst wieder in ihre Friendbook-Accounts zu kommen? Könntest du mir vielleicht auch helfen?",,,
-level3.Dialogue1.2.P,Yeah sure! ,Na klar!,,,
+level3.Dialogue1.2.P,"Yeah, sure! ",Na klar!,,,
 level3.Dialogue1.3A.C3,Thanks!,Danke!,,,
-level3.Dialogue1.3B.C3,"So, I had written my password on a piece of paper, I kinda lost
-it and now I can't seem to rememeber it all","Also, Ich hatte alle meine Passwörter und Login-Informationen auf ein Blatt Papier geschrieben... Aber nun kann ich das Blatt nicht mehr finden und mich auch nicht mehr an meine Infos darauf erinnern.",,,
+level3.Dialogue1.3B.C3,"So, I had written my password on a piece of paper, I kinda lost it and now I can't seem to rememeber it all","Also, Ich hatte alle meine Passwörter und Login-Informationen auf ein Blatt Papier geschrieben... Aber nun kann ich das Blatt nicht mehr finden und mich auch nicht mehr an meine Infos darauf erinnern.",,,
 level3.Dialogue1.4.P,Oh no! You should never do that!,"Oha, ja, sowas solltest du nie tun!",,,
-level3.Dialogue1.5.C3,"Yeah, big mistake! I regret it now!","Ja, das habe ich auch gemerkt...",,,
-level3.Dialogue1.6A.P,Okay!,Ok!,,,
-level3.Dialogue1.6B.P,Let's check your profile for information.,Lass uns mal dein Profil anschaun.,,,
+level3.Dialogue1.5A.C3,"Yeah, big mistake! I regret it now!","Ja, das habe ich auch gemerkt...",,,
+level3.Dialogue1.5B.C3,"So, what are you going to look for in my profile?",Was hoffst du in meinem Profil zu finden?,,,
+level3.Dialogue1.6A.P,Many people make mistake of using common words in their passwords which is personal to them and don't even include numbers and symbols to make their password stronger,"Viele machen den Fehler gängige oder assoziative Begriffe in ihren Passwörtern zu verwenden. Manche verzichten sogar gänzlich auf das Einbinden von Zahlen und Zeichen, obwohl diese ein Passwort um vieles schwerer zu knacken machen.",,,
+level3.Dialogue1.6B.P,I'm going to look through your profile to see if you are making the same mistake,Ich werde mal schauen ob ich dein Passwort so erraten kann.,,,
+level3.Dialogue1.7.C3,"Ok, hope it works!","Ok, Ich hoffe es klappt!",,,
+level3.Dialogue1.8.P,Let's check your profile for information then.,Lass uns mal dein Profil anschaun.,,,
 ,,,,,
 ,,,,,
 level3.Char3.Name,Paul Krämer ,Paul Krämer ,,,
@@ -270,24 +272,21 @@ level3.Feed.Post1,"Vacation in India!
 What a beautiful place! #india #beauty","Urlaub in Indien!
 Echt wunderschön hier! #Indien #Reiseziel",,[Image of a place from India] ,
 level3.Feed.Post1.comment1,OMG! This is so beautiful,OMG! Echt wunderschön!,,Aynur Akman,
-level3.Feed.Post1.comment1.response1,And you didn’t invite me?,Und warum war ich nicht eingeladen?,,Shaurya Acharya,
-level3.Feed.Post1.comment2,It was a family trip :p,Es war eine Familienurlaub ;),,Paul Krämer ,
-level3.Feed.Post2,"
-Getting ready for my first match! #football #firstmatch",Mache mich gerade fertig für unser erstes Spiel der Saison #Fußball #FußballForever,,[image of football on ground],
+level3.Feed.Post1.comment2,And you didn’t invite me?,Und warum war ich nicht eingeladen?,,Shaurya Acharya,
+level3.Feed.Post1.comment2.response1,It was a family trip :p,Es war eine Familienurlaub ;),,Paul Krämer ,
+level3.Feed.Post2,Getting ready for my first match! #football #forever,Mache mich gerade fertig für unser erstes Spiel der Saison #Fußball #FußballForever,,[image of football on ground],
 level3.Feed.Post2.comment1,We are going to defeat you!!,Wir werden euch schlagen!!,,Mustafa Acar ,
 level3.Feed.Post2.comment1.response1,Keep dreaming xD,Träum weiter xD,,Paul Krämer ,
-level3.Feed.Post2.comment2,Good luck for the game,Viel Glück!,,Sarah Schmedeke,
-level3.Feed.Post2.comment2.response1,Thanks!,Danke,,Paul Krämer ,
-level3.Feed.Post3,"Lunch time with these amazing guys!!!
-Cannot wait for my first match!!  #firstmatch #footballlove",Essen gehen mit den Jungs! Countdown zum großen Spiel! #FußballForever #FußballLove,,[image of food plates with crumbled paper nearby],
+level3.Feed.Post2.comment2,Good luck for the game!,Viel Glück!,,Sarah Schmedeke,
+level3.Feed.Post2.comment2.response1,Thanks,Danke,,Paul Krämer ,
+level3.Feed.Post3,Lunch time with these amazing guys!!! Cannot wait for my first match!!  #firstmatch #football ,Essen gehen mit den Jungs! Countdown zum großen Spiel! #FußballForever #FußballLove,,[image of food plates with crumbled paper nearby],
 level3.Feed.Post3.comment1,"Awesome, two photos in a day! Good going dude!","Super, zwei Bilder an einem Tag! Schön weiterposten!",,Aynur Akman,
 level3.Feed.Post3.comment2,I love me some food! ;-p,Fußball ist echt das beste! ;-p,,Mustafa Acar ,
 level3.Feed.Post3.comment2.response1,Haha. I'll take you next time for sure :-D,Haha. Nächstes mal bist du auch dabei! ;),,Paul Krämer ,
 level3.Feed.Post3.comment3,Your love for football finally paid off!,Scheint als ob sich deine Liebe zum Fußball endlich auszahlt!,,Shaurya Acharya,
-level3.Feed.Post3.comment3.response1,"Haha, Yes I love it!! <3","Haha, ja, ist halt das Beste!! <3",,Paul Krämer ,
+level3.Feed.Post3.comment3.response1,"Haha, the love for football is forever!! <3","Haha, ja, ist halt das Beste!! <3",,Paul Krämer ,
 ,,,,,
-level3.Feed.Post4,"
-What a day! Got selected in Lord’s football club ",Was für ein Tag! Wurde ins Team des FC Lorderstadt aufgenommen!,,[image of a jersey with their name on it],
+level3.Feed.Post4,What a day! Got selected in Lord’s football club  #excited,Was für ein Tag! Wurde ins Team des FC Lorderstadt aufgenommen!,,[image of a jersey with their name on it],
 level3.Feed.Post4.comment1,OMG! Congratulations!!,WOW! Herzlichen Glückwunsch! Du hast es echt verdient!,,Aynur Akman,
 level3.Feed.Post4.comment1.response1,Thank you ,Besten Dank,,Paul Krämer ,
 ,,,,,
@@ -296,39 +295,29 @@ level3.Feed.Post5.comment1,"Wait, exams are coming? when? ",Warte mal... Was fü
 level3.Feed.Post5.comment1.response1,A week from now! ,In einer Woche,,Paul Krämer ,
 level3.Feed.Post5.comment2,I'm going to FAIL!!!!!!!!!! ,Mist! Da werde ich auf jeden Fall durchfallen!!!!,,Shaurya Acharya,
 level3.Feed.Post5.comment2.response1,"Haha, you won't! ","Haha, nein, wirst du eh nicht!",,Paul Krämer ,
-level3.Feed.Post5.comment2.response2,"I'll share my email id paul12@mymail.com, we will share notes 
-with each other. I won't let you fail my friend!! ","paul12@mymail.com ... Hier ist meine Email-Adresse, schreibe mir eine Nachricht, dann schicke ich dir meine Notizen.",,Paul Krämer ,
+level3.Feed.Post5.comment2.response2,"I'll share my email id paul12@mymail.com, we will share notes with each other. I won't let you fail my friend!! ","paul12@mymail.com ... Hier ist meine Email-Adresse, schreibe mir eine Nachricht, dann schicke ich dir meine Notizen.",,Paul Krämer ,
 level3.Feed.Post5.comment2.response3,"You have more faith in me than my parents,You are my savior!!!!","Haha, du hast mehr Vertrauen in mich als meine eigenen Eltern. Bist echt mein Retter!",,Shaurya Acharya,
 ,,,,,
 level3.Feed.Post6,Finally bought a BS5!! Gonna play games all day now :-D,Habe endlich meine BS5 gakauft!!! Ab jetzt den ganzen Tag zocken :-D,,Paul Krämer ,
 level3.Feed.Post6.comment1,Woah!!! You are lucky! ,"Oha, Glück gehabt!!",,Aynur Akman,
-level3.Feed.Post6.comment2,I'm coming over to play right now! ,Bin auf dem Weg. Gleich wird gedaddelt!,,Shaurya Acharya,
-level3.Feed.Post6.comment2.response1,"Haha, i'm waiting","Haha, ich warte!",,Paul Krämer ,
+level3.Feed.Post6.comment2,I bet you will play Football in that too,Bin auf dem Weg. Gleich wird gedaddelt!,,Shaurya Acharya,
+level3.Feed.Post6.comment2.response1,"Haha, you are right!","Haha, ich warte!",,Paul Krämer ,
 ,,,,,
 level3.Failsafe1.1.C3,Did you find anything?,Hast du etwas gefunden?,,,
-level3.Failsafe1.2.P,"No, but it looks like you post a lot of 
-stuff about football.","Nein, aber ich sehe du bist sehr Fußballbegeistert.",,,
-level3.Failsafe1.3.C3,"Oh yes, I love it! <3","Oh ja, Fußball forever!",,,
+level3.Failsafe1.2.P,"No, but it looks like you post a lot of stuff about football.","Nein, aber ich sehe du bist sehr Fußballbegeistert.",,,
+level3.Failsafe1.3.C3,"Oh yes, football love is forever! <3","Oh ja, Fußball forever!",,,
 ,,,,,
-level3.Failsafe2.1.C3,"Wait.. i remembered something, i wrote that password on a 
-napkin when I had lunch with my football buddies","Warte Mal..  Ich erinnere mich an etwas, Ich habe mein Zugangsdaten auf ein Taschentusch geschrieben als ich Essen war mit den Jungs.",,,
+level3.Failsafe2.1.C3,"Wait.. i remembered something, i wrote that password on a napkin when I had lunch with my football buddies","Warte Mal..  Ich erinnere mich an etwas, Ich habe mein Zugangsdaten auf ein Taschentusch geschrieben als ich Essen war mit den Jungs.",,,
 level3.Failsafe2.2.P,Hmm... interesting,Hmm... Interessant,,,
 ,,,,,
-level3.Failsafe3.1.C3,"Hey, with all the clues you gave me I think 
-I remember my password, since I really love football it must 
-have been ""Football""","Hey, mit all den Hinweisen von dir glaube ich mich zu erinnern: Ich glaube mein Passwort war ""Fußball""",,,
+level3.Failsafe3.1.C3,"Hey, with all the clues you gave me I think I remember my password, since I really love football it must have been ""footballforever""","Hey, mit all den Hinweisen von dir glaube ich mich zu erinnern: Ich glaube mein Passwort war ""Fußballforever""",,,
 level3.Failsafe3.2.P,Happy I could help!,Schön dass ich helfen konnte,,,
 ,,,,,
 level3.EndGameDialogue.0.P,Login successful!,Login hat geklappt!,,,
-level3.EndGameDialogue.1.C3,"Oh! The password was right in front of me, how did I not get it? 
-I was so careless about this.Anyway thanks a lot, you are a 
-genius!!","Oh! Das Passwort war die ganze Zeit vor meiner Nase... Wie habe ich das Übersehen? Das ist echt kein sicheres Passwort für mich... Vielen Dank auf jeden Fall, du bist echt ein Genie!",,,
+level3.EndGameDialogue.1.C3,"Oh! The password was right in front of me, how did I not get it! I was so careless about this. Anyway thanks a lot, you are a genius!!","Oh! Das Passwort war die ganze Zeit vor meiner Nase... Wie habe ich das Übersehen? Das ist echt kein sicheres Passwort für mich... Vielen Dank auf jeden Fall, du bist echt ein Genie!",,,
 level3.EndGameDialogue.2A.P,Glad I could help!,Schön dass ich helfen konnte,,,
-level3.EndGameDialogue.2B.P,"Even though your password was long it was easy to guess, use
-numbers, symbols and capital letters to make your password 
-stronger.","Benutze am Besten eine Kombination von kleinen und großen Buchstaben, Nummern und Symbolen um deine Passwörter sicherer zu gestalten.",,,
-level3.EndGameDialogue.3.C3,"Yes, you are right. I should add those in my new password to 
-make it stronger. Thanks for the help! bye!","Ja, du hast Recht. Ich werde direkt ein neues Passwort kreieren und deinen Rat beachten. Vielen Dank für alles!",,,
+level3.EndGameDialogue.2B.P,"Even though your password was long, it was easy to guess, use numbers, symbols and capital letters to make your password stronger.","Benutze am Besten eine Kombination von kleinen und großen Buchstaben, Nummern und Symbolen um deine Passwörter sicherer zu gestalten.",,,
+level3.EndGameDialogue.3.C3,"Yes, you are right. I should add those in my new password to make it stronger. Thanks for the help! bye!","Ja, du hast Recht. Ich werde direkt ein neues Passwort kreieren und deinen Rat beachten. Vielen Dank für alles!",,,
 level3.EndGameDialogue.EndButton,Bye!,Gerne. Tschau!,,,
 ,,,,,
 ,,,,,
@@ -341,12 +330,15 @@ level4.password2,@Ash5,@Ash5,,,
 level4.Dialogue1.1.C4,"Hey! Long time no see! I heard you were helping people recover their friendbook accounts, can you help me too?",Hey! Lange nichts mehr von dir gehört! Ich hörte du hilfst Leuten Zugang zu ihren Friendsbook-Accounts zu erlangen? Kannst du mir auch helfen?,,,
 level4.Dialogue1.2A.P,Oh yes! long time indeed!,Ja ist echt eine Weile her. ,,,
 level4.Dialogue1.2B.P,"Yeah sure, I’ll help you out.",Na klar helf ich dir!,,,
-level4.Dialogue1.3.C4,"I recently had a minor accident and got a concussion. Now 
-i’m having a hard time remembering things like my where I kept 
-left sock, phone number, friendbook password and all","Ich hatte vor Kurzem einen Unfall und dabei eine leichte Gehirnerschütterung erlitten. Seitdem habe ich manchmal Schwierigkeiten mich an Dinge zu erinnern. Wo meine linke Socke steckt, eine Telefonnummer, meine Friendbook-Logindaten und so...",,,
+level4.Dialogue1.3.C4,I recently had a minor accident and got a concussion. Before the accident I had changed my friendbook password now I can't seem to remember it! ,"Ich hatte vor Kurzem einen Unfall und dabei eine leichte Gehirnerschütterung erlitten. Seitdem habe ich manchmal Schwierigkeiten mich an Dinge zu erinnern. Wo meine linke Socke steckt, eine Telefonnummer, meine Friendbook-Logindaten und so...",,,
 level4.Dialogue1.4.P,Oh no! Hope you are okay?,"Ohje, ich hoffe das geht wieder weg?",,,
-level4.Dialogue1.5.C4,"Yeah, I’m fine now. Thanks for asking :-)","Ja, sollte es. Hoffe ich mal. Danke der Nachfrage.",,,
-level4.Dialogue1.6.P,Okay! Let me check your profile.,Kein Problem! lass mich mal dein Profil ansehen.,,,
+level4.Dialogue1.5A.C4,"Yeah, I’m fine now. Thanks for asking :-)","Ja, sollte es. Hoffe ich mal. Danke der Nachfrage.",,,
+level4.Dialogue1.5B.C4,What info are you looking for in my profile?,Was hoffst du in meinem Profil zu finden?,,,
+level4.Dialogue1.6A.P,People like using something personal in their password and add one or two numbers and symbols thinking it will make their password stronger.,"Leute verwenden persönlich relevante Namen oder Informationen in ihren Passwörtern, schmeißen eine Zahl oder zwei dazu und denken ihr Passwort sei sicher. Dies ist natürlich falsch.",,,
+level4.Dialogue1.6B.P,"But what they don't realise is, if their password is less than 8 characters then adding numbers,symbols is of no use",Viele verstehen dabei nicht dass auch die Länge eines Passwortes und die Komposition sehr wichtig ist.,,,
+level4.Dialogue1.6C.P,Let's see if you are making the same mistake,Lass uns mal schauen ob du denselben Fehler gemacht hast.,,,
+level4.Dialogue1.7.C3,Okay! I'm nervous now :(,"Oha, nun bin ich nervös!",,,
+level4.Dialogue1.8.P,Don't worry! Let's check your profile.,Kein Problem! lass mich mal dein Profil ansehen.,,,
 ,,,,,
 level4.Char4.Name,Aisha Bajaj,Aisha Bajaj,,,
 ,,,,,
@@ -370,19 +362,18 @@ level4.Hobbies.2,Gardening,Gärtnerei,,,
 ,,,,,
 ,,,,,
 level4.Feed.Post1,"Hey guys, I just joined MyGram app follow me @Ash","Hey Leute, Ich bin gerade auch der MyGram-App beigetreten. Ihr könnt ab sofort @Ashash folgen! ",,[Text post],
-level4.Feed.Post1.comment1,I'm going to call you @Ash everytime! :-p,Willkommen an Bord! Ab jetzt nenne ich dich nurnoch @Ash! :-p,,Aynur Akman ,
+level4.Feed.Post1.comment1,I'm going to call you @Ash everytime! ,Willkommen an Bord! Ab jetzt nenne ich dich nurnoch @Ash!,,Aynur Akman ,
 level4.Feed.Post1.comment1.response1,Please don't do that lol ,Saubeeer!,,Aisha,
 level4.Feed.Post1.comment2,"Look who finally decided to join, boomer @Ash :-p","Sieh mal an wer sich dann doch entschieden hat einen MyGram Account zu öffnen, Boomer@Ash :-p",,Sarah Schmedeke,
 level4.Feed.Post1.comment2.response1,Wow! you calling me a boomer? I'm coming for you,"Wow! Nennst du mich etwa einen Boomer? Pass ja auf, du ;)",,Aisha,
-level4.Feed.Post2,Sunday. coffee and chill at home :-),Sonntag. Heißer Kaffee und schön zuhause bleiben! :-) ,,[image of cofee cup on a table],
+level4.Feed.Post2,"Sunday, coffee and chill at home :-)",Sonntag. Heißer Kaffee und schön zuhause bleiben! :-) ,,[image of cofee cup on a table],
 level4.Feed.Post2.comment1,I’m coming to your home to get that coffee,Ich komm gleich mal auf eine heiße Tasse vorbei,,Sarah Schmedeke,
 level4.Feed.Post2.comment1.response1,I'm waiting xD,Die Tür ist offen xD,,Aisha,
 level4.Feed.Post2.comment2,Oh my god Ash! I love your home so muchhhhh!!!! ,"Oh mein Gott, Ash! Dein Haus sieht sooooo toll aus!!! Reiner Neid hier!",,Shaurya Acharya,
 level4.Feed.Post2.comment2.response1,Aww.. Thank you <3,"Das ist aber lieb von dir, danke <3",,Aisha,
 level4.Feed.Post3,Meet Lily! Our new friend <3 ,Das ist Lily! Unser neuer Freund <3,,[image of a flower pot on her balcony],
 level4.Feed.Post3.comment1,"Beautiful view Ash! I want to buy your home, how much is it?",Unglaublich schöne Aussicht. Ash! Willst du mir dein Haus verkaufen? Wieviel?,,Shaurya Acharya,
-level4.Feed.Post3.comment1.response1,"Haha, not for sale! Also 5 is my favorite number. So I'm never 
-selling it! ","Haha, nicht zu verkaufen, sorry! Die Nummer 5 ist meine Absolute Lieblings- und Glückszahl, du hast keine Chance dass ich jemals heir ausziehe! :D",,Aisha,
+level4.Feed.Post3.comment1.response1,"Haha, not for sale! Also 5 is my favorite number. So I'm never selling it! ","Haha, nicht zu verkaufen, sorry! Die Nummer 5 ist meine Absolute Lieblings- und Glückszahl, du hast keine Chance dass ich jemals heir ausziehe! :D",,Aisha,
 level4.Feed.Post3.comment2,OMG! Its soo cutee @Ash,Unglaublich! Soo niedlich Ash!,,Aynur Akman ,
 level4.Feed.Post3.comment2.response1,Yes it is  <3,"Ja, das weiß ich <3",,Aisha,
 level4.Feed.Post4,It's Journal time. Let's go!!!,Tagebuch.Zeit. Ich kenne das!! ,,[image of a book with number 5 on it],
@@ -398,27 +389,24 @@ level4.Feed.Post5.comment1,Me too!! ,Ich auch...,,Sarah Schmedeke,
 level4.Feed.Post5.comment2,"I'm applying for a new job, @Ash help me with my resume!!!!!","Ich schreibe gerade an einer Bewerbung, kann mir Jemand bei meinem Lebenslauf helfen?",,Aynur Akman,
 level4.Feed.Post5.comment2.response1,Send me one too - awesomesarah@mymail.com,"Ja, ich, schreib mir einfach: awesomesarah@mymail.com",,Sarah Schmedeke,
 level4.Feed.Post5.comment2.response2,Here - ashbajaj@mymail.com,"Jo, kannst mir auch schreiben, kein Problem - ashbajaj@mymail.com",,Aisha,
-level4.Feed.Post5.comment2.response3,You are just awesome @Ash ;-) ,Ihr seid die Besten! ;),,Aynur Akman,
+level4.Feed.Post5.comment2.response3,You are just awesome @Ash :-) ,Ihr seid die Besten! ;),,Aynur Akman,
 ,,,,,
 level4.Feed.Post6,Anyone know where I can buy a good cricket bat?,Weiß Jemand wo ich einen Kricketschläger kaufen kann?,,Aisha,
 level4.Feed.Post6.comment1,Umm.. what is a cricket bat? ,Ööh... Was ist Kricket?,,Paul Krämer,
 level4.Feed.Post6.comment1.response1,"Haha, you don't know? Search it on the internet","Haha, weißt du das nicht? Google mal!",,Aisha,
-level4.Feed.Post6.comment2,"I know a place, you can email them and ask if they have it
-sportsworldz@mymail.com","Ich kenn einen Laden, schick denen einfach mal eine Email, die sind immer sehr hilfreich. sportsworldz@mymail.com",,Shaurya Acharya,
-level4.Feed.Post6.comment2.response1,"Awesome, i'll ask them, thanks!","Super! Ich frag direkt mal an, vielen Dank!",,Aisha,
+level4.Feed.Post6.comment2,"I know a place, you can email them and ask if they have it sportsworldz@mymail.com","Ich kenn einen Laden, schick denen einfach mal eine Email, die sind immer sehr hilfreich. sportsworldz@mymail.com",,Shaurya Acharya,
+level4.Feed.Post6.comment2.response1,"Awesome, I'll ask them, thanks!","Super! Ich frag direkt mal an, vielen Dank!",,Aisha,
 ,,,,,
 ,,,,,
 level4.Failsafe2.1.C4,Did you find anything?,Hast du etwas gefunden?,,,
 level4.Failsafe2.2.P,"No, but it looks like you share a lot of stuff on social media.","Noch nicht, aber es sieht so aus als würdest du sehr viel auf deiner Pinwand teilen.",,,
-level4.Failsafe2.3.C4,"Yeah, I have a bad habit of posting everything :-p","Ja, ist eine schlechte Angewohnheit :-p",,,
-level4.FailSafe2.4A.C4,"I do post a lot about my home, stuff I do in free time as such",Ich poste einfach so gerne über mein Haus und was ich so in meiner Freizeit so treibe.,,,
+level4.Failsafe2.3.C4,"Yeah, I have a bad habit of posting everything ","Ja, ist eine schlechte Angewohnheit ",,,
+level4.FailSafe2.4A.C4,"I do post a lot about my home, stuff I do in free time so yeah :-p",Ich poste einfach so gerne über mein Haus und was ich so in meiner Freizeit so treibe.,,,
 level4.FailSafe2.5A.P,Yeah!,"Ja, das sehe ich.",,,
-level4.FailSafe2.5B.P,"But try to not to post important imformation like your bank 
-account details, phone number, and all","Aber es ist wichtig darauf zu achten keine sensitiven Informationen wie bank Daten, Telefonnummern usw. dort zu teilen. ",,,
+level4.FailSafe2.5B.P,"But try to not to post important imformation like your bank account details, phone number, and such","Aber es ist wichtig darauf zu achten keine sensitiven Informationen wie bank Daten, Telefonnummern usw. dort zu teilen. ",,,
 level4.FailSafe2.6.C4,"Yeah, I won't make that mistake! Thanks for pointing it out ","Ja, ich sollte mehr darauf achten. Danke für den Hinweis.",,,
 ,,,,,
-level4.Failsafe4.1.C4,"Hey! I just checked MyGram password and I think I used the 
-same password for my Friendbook account too which is @Ash5","Hey, ich habe gerade nochmal mein MyGram-Passwort überprüft und glaube, dass ich dasselbe Passwort wie für Friendbook verwendet habe: @Ash 5 ",,,
+level4.Failsafe4.1.C4,Hey! I just checked MyGram password and I think I used the same password for my Friendbook account too which is @Ash5,"Hey, ich habe gerade nochmal mein MyGram-Passwort überprüft und glaube, dass ich dasselbe Passwort wie für Friendbook verwendet habe: @Ash 5 ",,,
 level4.Failsafe4.2.P,Let me check it!,Ich probier es mal!,,,
 ,,,,,
 ,,,,,
@@ -428,29 +416,21 @@ level4.Failsafe4.2.P,Let me check it!,Ich probier es mal!,,,
 ,,,,,
 ,,,,,
 level4.EndGameDialogue.1.P,Login successful!,Login erfolgreich!,,,
-level4.EndGameDialogue.2.C4,"Oh! My password was so simple, I should definitely keep a 
-better password from now on. Thank you for helping me!","Oha, ja, meine Passwörter sind definitiv zu schwach. Vielen Dank für deine Hilfe",,,
+level4.EndGameDialogue.2.C4,"Oh! My password was so simple, I should definitely keep a better password from now on. Thank you for helping me!","Oha, ja, meine Passwörter sind definitiv zu schwach. Vielen Dank für deine Hilfe",,,
 level4.EndGameDialogue.3A.P,Glad I could help!,Freut mich dass ich helfen konnte!,,,
 level4.EndGameDialogue.3B.P,"Even though your password had a symbol, a capital letter and a number that is not enough, next time make sure your password consists of more than 12 characters!","Auch wenn dein passwort sowohl Groß- als auch kleingeschriebene Buchstaben, ein Symbol und eine Zahl enthielt, reicht das noch nicht um ein wirklich sicheres Passwort zu erstellen. Idealerweise besteht ein Passwort auch aus Symbolen, diversen Zahlen und mehreren Wörtern oder unzusammenhängenden Buchstabenkombinationen.",,,
-level4.EndGameDialogue.4.C4,"Thanks for the tip!
-Quick question- I used the same password for my MyGram 
-account, should I change it too?","Danke für den Rat! Eine kurze Frage: Da ich ja dasselbe Passwort für meinen Friendbook als auch MyGram-Account verwende, sollte ich beide ändern?",,,
-level4.EndGameDialogue.5.P,"Yes, you should definitely change your MyGram password too. 
-And make sure not to keep the same password for different 
-apps.Always use different and long passwords for every app 
-and website.","Ja, auf jeden Fall! Jeder der sich dein Profil kurz anschaut kann vermutlcih dieses Passwort knacken. Es ist generell wichtig verschiedene Passwörter für jede Platform und Anmeldung zu erstellen - Ansonsten besteht ein sehr hohes Sicherheitsrisiko.",,,
+level4.EndGameDialogue.4.C4,"Thanks for the tip! 
+Quick question: I used the same password for my MyGram account, should I change it too?","Danke für den Rat! Eine kurze Frage: Da ich ja dasselbe Passwort für meinen Friendbook als auch MyGram-Account verwende, sollte ich beide ändern?",,,
+level4.EndGameDialogue.5.P,"Yes, you should definitely change your MyGram password too. And make sure not to keep the same password for different apps.Always use different and long passwords for every app and website.","Ja, auf jeden Fall! Jeder der sich dein Profil kurz anschaut kann vermutlcih dieses Passwort knacken. Es ist generell wichtig verschiedene Passwörter für jede Platform und Anmeldung zu erstellen - Ansonsten besteht ein sehr hohes Sicherheitsrisiko.",,,
 level4.EndGameDialogue.6.C4,"I will remember that, thanks for all your tips  :-)","Du hast völlig Recht! Echt, super vielen Dank für deine Hilfe und Ratschläge!",,,
 ,,,,,
 ,,,,,
 ,,,,,
-level5.Dialogue1.1.C4,"Hey, It's me again, I’m having trouble remembering all my p
-asswords. Is there any way to make it automatically?",,,Aisha Bajaj,
+level5.Dialogue1.1.C4,"Hey, It's me again, I’m having trouble remembering all my passwords. Is there any way to make it automatically?",,,Aisha Bajaj,
 level5.Dialogue1.2.P,"Yes, you can use a password Manager",,,,
 level5.Dialogue1.3.C4,What is a Password Manager?,,,Aisha Bajaj,
-level5.Dialogue1.4A.P,"A password manager is a program that allows you to store, 
-generate and manage their passwords ",,,,
-level5.Dialogue1.4B.P,"Basically password manager will create complex
-passwords automatically ",,,,
+level5.Dialogue1.4A.P,"A password manager is a program that allows you to store, generate and manage their passwords ",,,,
+level5.Dialogue1.4B.P,Basically password manager will create complex passwords automatically ,,,,
 level5.Dialogue1.5A.C4,That sounds useful!,,,Aisha Bajaj,
 level5.Dialogue1.5B.C4,Can you help me with it?,,,Aisha Bajaj,
 level5.Dialogue1.6.P,Sure!,,,,
@@ -459,49 +439,38 @@ level5.Dialogue1.7B.C4,I’ll fill my name and email quickly,,,Aisha Bajaj,
 level5.Dialogue1.7B.C4,What is this master password?,,,Aisha Bajaj,
 level5.Dialogue1.7B.C4,Is it any different from a regular password?,,,Aisha Bajaj,
 level5.Dialogue1.8A.P,A master password is same as a regular password,,,,
-level5.Dialogue1.8B.P,"But in password manager it is used to save all your passwords 
-and data which only you can access it",,,,
-level5.Dialogue1.8C.P,"Your master password should be unique and memorable so 
-that only you can access it",,,,
+level5.Dialogue1.8B.P,But in password manager it is used to save all your passwords and data which only you can access it,,,,
+level5.Dialogue1.8C.P,Your master password should be unique and memorable so that only you can access it,,,,
 level5.Dialogue1.9.C4,"Okay, what should I use in my master password?",,,Aisha Bajaj,
 ,,,,,
 level5.Option1.1.P,My Name,,,,
-level5.ErrorMessage1.1,"Never use your personal name or someone you 
-know in your password!",,,,
+level5.ErrorMessage1.1,Never use your personal name or someone you know in your password!,,,,
 level5.Option1.2.P,My Email,,,,
 level5.ErrorMessage1.2,Never use your email in your password!,,,,
 ,,,,,
 level5.Option1.3.P,Random Words,,,,
-level5.Dialogue1A.10.P,"Use very unique and random words like Honey, raid, conductor, 
-trafficlights etc..",,,,
-level5.Dialogue1B.10.P,"But do not use very common words like password, dragon, 
-qwerty and many other as these are the mostly used password. ",,,,
+level5.Dialogue1A.10.P,"Use very unique and random words like Honey, raid, conductor, trafficlights etc..",,,,
+level5.Dialogue1B.10.P,"But do not use very common words like password, dragon, qwerty and many other as these are the mostly used password. ",,,,
 level5.Dialogue1C.10.P,Use both Uppercase and Lowercase letters in the password,,,,
-level5.Dialogue1.11A.C4,"Okay, I used random words with both Uppercase and 
-Lowercase letters",,,Aisha Bajaj,
+level5.Dialogue1.11A.C4,"Okay, I used random words with both Uppercase and Lowercase letters",,,Aisha Bajaj,
 level5.Dialogue1.11B.C4,"Now, what else should I use?",,,Aisha Bajaj,
 ,,,,,
 level5.Dialogue1.12.P,You can use numbers,,,,
 level5.Dialogue1.13.C4,How should I use numbers?,,,Aisha Bajaj,
 ,,,,,
 level5.Option2.1.P,123456,,,,
-level5.ErrorMessage2.1,"Never use continuous numbers like 123456,11111, etc
-in your password!",,,,
+level5.ErrorMessage2.1,"Never use continuous numbers like 123456,11111, etc in your password!",,,,
 ,,,,,
 level5.Option2.2.P,Random Numbers,,,,
 level5.Dialogue1.14A.P,Use random numbers in your password,,,,
-level5.Dialogue1.14B.P,"You can use them at the start, middle or at the
- end of your password",,,,
+level5.Dialogue1.14B.P,"You can use them at the start, middle or at the  end of your password",,,,
 level5.Dialogue1.15.C4,I have added numbers to my password,,,Aisha Bajaj,
 ,,,,,
 level5.Option2.3.P,My Date of Birth,,,,
-level5.ErrorMessage2.3,"Never use your birthday, phone number or other actual 
-combination of numbers etc in your password!",,,,
+level5.ErrorMessage2.3,"Never use your birthday, phone number or other actual combination of numbers etc in your password!",,,,
 ,,,,,
-level5.Dialogue1.16.C4,"Are there any other tricks I can use to improve my 
-password strength?",,,,
-level5.Dialogue1.17A.P,"Use different symbols like @,$,+,(,:, etc
-and mix them into your password",,,,
+level5.Dialogue1.16.C4,Are there any other tricks I can use to improve my password strength?,,,,
+level5.Dialogue1.17A.P,"Use different symbols like @,$,+,(,:, etc and mix them into your password",,,,
 level5.Dialogue1.17B.P,Avoid putting all of them in the same place,,,,
 level5.Dialogue1.18A.C4,"Okay, I have added symbols to my password",,,Aisha Bajaj,
 level5.Dialogue1.18B.C4,I have done everything you said,,,Aisha Bajaj,
@@ -511,29 +480,22 @@ level5.Option3.1.P,Maximum of 8 characters,,,,
 level5.ErrorMessage3.1,Your password is weak!,,,,
 ,,,,,
 level5.Option3.2.P,Greater than 12 characters,,,,
-level5.Dialogue1.19.P,"Passwords should be longer than 12 because they are 
-strong and cannot be easily guessed or cracked",,,,
+level5.Dialogue1.19.P,Passwords should be longer than 12 because they are strong and cannot be easily guessed or cracked,,,,
 level5.Dialogue1.20A.C4,Okay! It’s finally done,,,Aisha Bajaj,
-level5.Dialogue1.20B.C4,"But the password I have created is very complex and 
-I don’t think I can remember this",,,Aisha Bajaj,
+level5.Dialogue1.20B.C4,But the password I have created is very complex and I don’t think I can remember this,,,Aisha Bajaj,
 level5.Dialogue1.20C.C4,This is my password - “8floWourr$#watEr”,,,Aisha Bajaj,
 level5.Dialogue1.20D.C4,Is there any easier way to do this?,,,Aisha Bajaj,
-level5.Dialogue1.21A.P,"Your password is strong, complex and unique but it can 
-be hard to remember.",,,,
+level5.Dialogue1.21A.P,"Your password is strong, complex and unique but it can be hard to remember.",,,,
 level5.Dialogue1.21B.P,And do not share your password with anyone not even with me.,,,,
-level5.Dialogue1.21C.P,"You can use Passphrase, it is similar to passwords but they 
-are very long and can have 20-30 characters.",,,,
+level5.Dialogue1.21C.P,"You can use Passphrase, it is similar to passwords but they are very long and can have 20-30 characters.",,,,
 level5.Dialogue1.21D.P,You can make a story and use it as a password.,,,,
-level5.Dialogue1.21E.P,"Example - You kicked a ball that hit a doorbell and then you 
-went to hide",,,,
+level5.Dialogue1.21E.P,Example - You kicked a ball that hit a doorbell and then you went to hide,,,,
 level5.Dialogue1.21F.P,Then the passphrase could be - Kick8all-hit-doorbell-hide,,,,
 level5.Dialogue1.21G.P,"Now this is something unique to you and only you know 
 this happened.",,,,
-level5.Dialogue1.21H.P,"This will be easier to remember and it is much longer and 
-stronger than your regular password",,,,
+level5.Dialogue1.21H.P,This will be easier to remember and it is much longer and stronger than your regular password,,,,
 level5.Dialogue1.21I.P,Passphrases should have at least 4 random words.,,,,
-level5.Dialogue1.21J.P,"You can add symbols,numbers in your passphrase to make it
-even more stronger",,,,
+level5.Dialogue1.21J.P,"You can add symbols,numbers in your passphrase to make it even more stronger",,,,
 level5.Dialogue1.22A.C4,Wow! This is very useful and now I can remember my password.,,,Aisha Bajaj,
 level5.Dialogue1.22B.C4,"I learned a lot from you, Thank you very much for your help!",,,Aisha Bajaj,
 ,,,,,
@@ -558,7 +520,7 @@ infoUI.chapter1,"In 2021 a study by NCSC UK concluded that:
 15% of internet-users use their pets name in their passwords
 14% use their family members names
 13% use a significant date
-6% use their favorite sports team","In 2021 hat eine Studie der NCSC UK herausgefunden, dass:
+6% use their favorite sports team","In 2021 fand eine Studie der NCSC UK heraus, dass:
 
 15% der befragten Internet-Nutzer den Namen ihres Haustieres in Passwörtern verwenden
 14% nutzen den/die Namen von Familienmitgliedern
@@ -605,11 +567,7 @@ infoUI.chapter4,"22% US adults have used their name in their password
 52% Reuse the same password for all multiple
 accounts ","22% Aller Erwachsenen in den USA haben ihren eigenen Namen in einem Passwort benutzt
 52% Aller Menschen benutzen dasselbe Passwort für mehrere oder ALLE ihrer digitalen Accounts",,,
-infoUI.chapter4.source,"Google/Harris Poll 
-The United States of P@ssw0rd$
-Online Security Survey","Google/Harris Poll 
-The United States of P@ssw0rd$
-Online Security Survey",,,
+infoUI.chapter4.source,Google/Harris Poll The United States of P@ssw0rd$ Online Security Survey,Google/Harris Poll The United States of P@ssw0rd$ Online Security Survey,,,
 infoUI.chapter4.source.URL,"https://services.google.com/fh/files/blogs/google_security_infographic.pdf
 https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/PasswordCheckup-HarrisPoll-InfographicFINAL.pdf","https://services.google.com/fh/files/blogs/google_security_infographic.pdf
 https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/PasswordCheckup-HarrisPoll-InfographicFINAL.pdf",,,
@@ -617,8 +575,6 @@ https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/PasswordCheck
 infoUI.chapter5,"15% Americans use password manager
 55% Americans could explain what a password manager
 does",,,,
-infoUI.chapter5.source,"Google/Harris Poll 
-The United States of P@ssw0rd$
-Online Security Survey",,,,
+infoUI.chapter5.source,Google/Harris Poll The United States of P@ssw0rd$ Online Security Survey,,,,
 infoUI.chapter5.source.URL,"https://services.google.com/fh/files/blogs/google_security_infographic.pdf
 https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/PasswordCheckup-HarrisPoll-InfographicFINAL.pdf",,,,

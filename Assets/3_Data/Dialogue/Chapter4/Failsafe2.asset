@@ -25,12 +25,6 @@ MonoBehaviour:
   - text: level4.FailSafe2.4A.C4
     alignment: 0
     sentManually: 0
-  - text: level4.FailSafe2.4B.C4
-    alignment: 0
-    sentManually: 0
-  - text: level4.FailSafe2.4C.C4
-    alignment: 0
-    sentManually: 0
   - text: level4.FailSafe2.5A.P
     alignment: 1
     sentManually: 1

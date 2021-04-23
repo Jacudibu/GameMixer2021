@@ -15,37 +15,22 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: f9a3051c0fe6becf0b6481ed34f445ef, type: 3}
   character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
   text: level3.Feed.Post3
-  minute: 41
-  hour: 7
+  minute: 11
+  hour: 12
   day: 1
   month: 4
   year: 2021
   comments:
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level3.Feed.Post3.comment1
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments: []
   - character: {fileID: 11400000, guid: d189b04510ca1d8b6863431f44d0f3ff, type: 2}
     text: level3.Feed.Post3.comment2
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments:
     - character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
       text: level3.Feed.Post3.comment2.response1
   - character: {fileID: 11400000, guid: fef5c658cab16fb40a0f8e8c388f4bb2, type: 2}
     text: level3.Feed.Post3.comment3
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments:
     - character: {fileID: 11400000, guid: b0ff5d5729e38c164859c7b2ff6714af, type: 2}
       text: level3.Feed.Post3.comment3.response1

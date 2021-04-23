@@ -23,21 +23,13 @@ MonoBehaviour:
   comments:
   - character: {fileID: 11400000, guid: f4229289979116f418eb5b7549ba9fd1, type: 2}
     text: level4.Feed.Post5.comment1
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments: []
   - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
     text: level4.Feed.Post5.comment2
-    minute: 0
-    hour: 0
-    day: 0
-    month: 0
-    year: 0
     responseComments:
-    - character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
+    - character: {fileID: 11400000, guid: f4229289979116f418eb5b7549ba9fd1, type: 2}
       text: level4.Feed.Post5.comment2.response1
-    - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
+    - character: {fileID: 11400000, guid: bdc64388589b8d296a58bff5f2ae75dd, type: 2}
       text: level4.Feed.Post5.comment2.response2
+    - character: {fileID: 11400000, guid: 76669657d0df0444397edbc7adbc32c8, type: 2}
+      text: level4.Feed.Post5.comment2.response3
